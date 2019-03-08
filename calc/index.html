@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator T</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <script src="calc.js"></script>
+</head>
+<body>
+    <div class="calc">
+        <div class="calc__field">
+            <input type="text" class="field__screen" value="" disabled id="display">
+        </div>
+        <div class="calc__btn">
+            <div class="btn__block">
+                <button class="block__item block__item_gray">
+                    <span class="item__text" value="%">%</span>
+                </button>
+                <button class="block__item block__item_gray">
+                    <span class="item__text" value="x²" onclick="powRoot()">x²</span>
+                </button>
+                <button class="block__item block__item_gray">
+                    <span class="item__text" value="√" onclick="sqrRoot()">√</span>
+                </button>
+                <button class="block__item block__item_gray">
+                    <span class="item__text" value="AC" onclick="ac()">AC</span>
+                </button>
+            </div>
+
+            <div class="btn__block">
+                <button class="block__item block__number">
+                    <span class="item__text" value="7" onclick="set('7')">7</span>
+                </button>
+                <button class="block__item block__number">
+                    <span class="item__text" value="8" onclick="set('8')">8</span>
+                </button>
+                <button class="block__item block__number">
+                    <span class="item__text" value="9" onclick="set('9')">9</span>
+                </button>
+                <button class="block__item block__item_gray">
+                    <span class="item__text" value="÷" onclick="set('/')">÷</span>
+                </button>
+            </div>
+            
+            <div class="btn__block">
+                <button class="block__item block__number">
+                    <span class="item__text" value="4" onclick="set('4')">4</span>
+                </button>
+                <button class="block__item block__number">
+                    <span class="item__text" value="5" onclick="set('5')">5</span>
+                </button>
+                <button class="block__item block__number">
+                    <span class="item__text" value="6" onclick="set('6')">6</span>
+                </button>
+                <button class="block__item block__item_gray">
+                    <span class="item__text" value="×" onclick="set('*')">×</span>
+                </button>
+            </div>
+
+            <div class="btn__block">
+                <button class="block__item block__number" value="1" onclick="set('1')">
+                    <span class="item__text">1</span>
+                </button>
+                <button class="block__item block__number" value="2" onclick="set('2')">
+                    <span class="item__text">2</span>
+                </button>
+                <button class="block__item block__number" value="3" onclick="set('3')">
+                    <span class="item__text">3</span>
+                </button>
+                <button class="block__item block__item_gray" value="-" onclick="set('-')">
+                    <span class="item__text">-</span>
+                </button>
+            </div>
+
+            <div class="btn__block">
+                <button class="block__item block__number" value="0" onclick="set('0')">
+                    <span class="item__text">0</span>
+                </button>
+                <button class="block__item" value=".">
+                    <span class="item__text">.</span>
+                </button>
+                <button class="block__item block__item_blue" value="=" onclick="answer()">
+                    <span class="item__text">=</span>
+                </button>
+                <button class="block__item block__item_gray" value="+" onclick="set('+')">
+                    <span class="item__text">+</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

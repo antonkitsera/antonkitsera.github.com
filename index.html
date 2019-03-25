@@ -1,1 +1,236 @@
-<a href="/calc">Simple Calculator</a>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Anton Kitsera { Front-end Developer }</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/fullpage.min.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#111111">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header container">
+        <nav class="nav">
+            <div class="nav__logo" data-menuanchor="home">
+                <a href="#home" class="logo__link">
+                    <img src="/img/logo.svg" class="logo__img" alt="logo">
+                    <h4 class="logo__title">Kitsera</h4>
+                </a>
+            </div>
+
+            <div class="nav__button nav__button-toggle">
+                <i class="fas fa-bars button__icon"></i>
+            </div>
+
+            <ul class="nav__list" id="menu">
+                <li class="list__item active" data-menuanchor="about">
+                    <a href="#about" class="item__link">About</a>
+                </li>
+                <li class="list__item" data-menuanchor="portfolio">
+                    <a href="#portfolio" class="item__link">Portfolio</a>
+                </li>
+                <li class="list__item" data-menuanchor="contact">
+                    <a href="#contact" class="item__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+ 
+<main class="main">
+    <div class="network">
+        <a class="network__link" href="https://github.com/antonkitsera/" target="_blank">
+            <i class="fab fa-github network__icon"></i>
+        </a>
+        <a class="network__link" href="https://www.linkedin.com/in/kitsera" target="_blank">
+            <i class="fab fa-linkedin-in network__icon"></i>
+        </a>
+        <a class="network__link" href="https://instagram.com/anton.kitsera/" target="_blank">
+            <i class="fab fa-instagram network__icon"></i>
+        </a>
+        <a class="network__link" href="https://www.facebook.com/antonkitsera" target="_blank">
+            <i class="fab fa-facebook-f network__icon"></i>
+        </a>
+    </div>
+
+    <div id="fullpage">
+        <div class="container">
+            <div class="section animated fadeInLeft delay-200ms" id="section0">
+                <div class="home">
+                    <div class="home_centered">
+                        <div class="home__group">
+                            <span class="home__text home__text_sm">Hello.</span>
+                            <span class="home__text home__text_lg">I am <span class="home__text_underline">Tony.</span></span>
+                            <span class="home__text home__text_md"><span class="home__text_underline">Front-end</span> developer.</span>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="section" id="section1">
+                <div class="about">
+                    <div class="about_top">
+                        <div class="about_topLeft">
+                            <img class="about__photo" src="/img/photo.JPG" alt="photo">
+                        </div>
+                        <div class="about_topRight">
+                            <h3 class="about__name">Anton Kitsera</h3>
+                            <h4 class="about__job">Front-end Developer</h4>
+                        </div>
+                    </div>
+                    <p class="about__text">Hello. I am junior front-end (react.js) developer from Lviv, Ukraine. Currently studying "Computer Engineering" in Lviv Polytechnic National University. I am looking for a part-time/full-time job with flexible work schedule. Now I am improving my JavaScript and React.js knowledge. For more information you can download my CV.</p> 
+                    <div class="about_bottom">
+                        <a class="about__btn about__cv" href="/doc/kitsera_cv.pdf" target="_blank">Download CV</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="section2">
+                <div class="portfolio">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 510px)" srcset="/img/img1.png">
+                                    <img class="slide__img" src="/img/img1_m.png" width="60%" height="60%">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 510px)" srcset="/img/img1.png">
+                                    <img class="slide__img" src="/img/img1_m.png" width="60%" height="60%">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 510px)" srcset="/img/img1.png">
+                                    <img class="slide__img" src="/img/img1_m.png" width="60%" height="60%">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 510px)" srcset="/img/img1.png">
+                                    <img class="slide__img" src="/img/img1_m.png" width="60%" height="60%">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="section3">
+                <div class="contact">
+                    <div class="contact__info">
+                        <h3 class="info__title">Contact with me</h3>
+
+                        <hr class="info__line">
+
+                        <div class="info__group">
+                            <div class="info__item">
+                                <i class="info__icon far fa-envelope"></i>
+                                <a class="info__link" href="mailto:antonkitsera@gmail.com">antonkitsera@gmail.com</a>
+                            </div>
+
+                            <div class="info__item">
+                                <i class="info__icon info__icon_middle fas fa-mobile-alt"></i>
+                                <a class="info__link" href="tel:+380975782110">+380 97 578 21 10</a>
+                            </div>
+
+                            <div class="info__item">
+                                <i class="info__icon far fa-compass"></i>
+                                <a class="info__link" href="https://goo.gl/maps/xs4KXvTnFr82" target="_blank">Lviv, Ukraine</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__social">
+                        <div class="social__item">
+                            <a class="social__link" href="skype:live:antonkitsera?chat">
+                                <i class="social__icon fab fa-skype"></i>
+                                Skype
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a class="social__link" href="viber://chat?number=+380975782110">
+                                <i class="social__icon fab fa-viber"></i>
+                                Viber
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a class="social__link" href="tg://resolve?domain=anton_kitsera">   
+                                <i class="social__icon fab fa-telegram"></i>
+                                Telegram
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a class="social__link" href="http://m.me/antonkitsera" target="_blank">   
+                                <i class="social__icon fab fa-facebook-messenger"></i>
+                                Messenger
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="/js/script.min.js"></script>
+<script src="/js/fullpage.min.js"></script>
+<script src="/js/swiper.min.js"></script>    
+<script>
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['home', 'about', 'portfolio', 'contact'],
+        navigation:true,
+        showActiveTooltip: true,
+        menu: '#menu',
+	    slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+    }); 
+</script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+<script>
+    function classToggle() {
+    const navs = document.querySelectorAll('.nav__list')
+    
+    navs.forEach(nav => nav.classList.toggle('nav__toggleShow'));
+    }
+  
+  document.querySelector('.nav__button-toggle').addEventListener('click', classToggle);
+</script>
+</body>
+</html>

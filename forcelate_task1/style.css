@@ -67,7 +67,7 @@ body {
 .block {
     display: flex;
     height: 433px;
-    width: 241px;
+    width: 239px;
     flex-wrap: wrap;
     flex-direction: row;
     padding-top: 30px;

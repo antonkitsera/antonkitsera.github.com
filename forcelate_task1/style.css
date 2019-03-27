@@ -6,7 +6,7 @@ body {
 
 @font-face {
     font-family: "nova-bold";
-    src: url(/nova-bold.otf) format("opentype");
+    src: url(./nova-bold.otf) format("opentype");
 }
 
 .scheme {

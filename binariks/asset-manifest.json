@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/binariks/static/css/main.b958d79d.chunk.css",
+    "main.js": "/binariks/static/js/main.e432aaaf.chunk.js",
+    "main.js.map": "/binariks/static/js/main.e432aaaf.chunk.js.map",
+    "runtime~main.js": "/binariks/static/js/runtime~main.323ebbad.js",
+    "runtime~main.js.map": "/binariks/static/js/runtime~main.323ebbad.js.map",
+    "static/js/2.6d11a779.chunk.js": "/binariks/static/js/2.6d11a779.chunk.js",
+    "static/js/2.6d11a779.chunk.js.map": "/binariks/static/js/2.6d11a779.chunk.js.map",
+    "index.html": "/binariks/index.html",
+    "precache-manifest.a522d10df88f926cda446e1972d4bb99.js": "/binariks/precache-manifest.a522d10df88f926cda446e1972d4bb99.js",
+    "service-worker.js": "/binariks/service-worker.js",
+    "static/css/main.b958d79d.chunk.css.map": "/binariks/static/css/main.b958d79d.chunk.css.map"
+  }
+}

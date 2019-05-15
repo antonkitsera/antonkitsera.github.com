@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "DOCKERONE";
-    src: url("/fonts/DOCKERONE.ttf");
+    src: url("./fonts/DOCKERONE.ttf");
     /*src: 
     url("css/fonts/Harabara.woff") format("woff"),
     url("css/fonts/Harabara.otf") format("opentype"),
@@ -13,32 +13,32 @@
 
 @font-face {
     font-family: "HeliosC";
-    src: url("/fonts/HeliosC.otf");
+    src: url("./fonts/HeliosC.otf");
 }
 
 @font-face {
     font-family: "HeliosCondBold";
-    src: url("/fonts/HeliosCondBold.otf");
+    src: url("./fonts/HeliosCondBold.otf");
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("/fonts/Roboto.ttf");
+    src: url("./fonts/Roboto.ttf");
 }
 
 @font-face {
     font-family: "RobotoBlack";
-    src: url("/fonts/RobotoBlack.ttf");
+    src: url("./fonts/RobotoBlack.ttf");
 }
 
 @font-face {
     font-family: "RobotoBold";
-    src: url("/fonts/RobotoBold.ttf");
+    src: url("./fonts/RobotoBold.ttf");
 }
 
 @font-face {
     font-family: "RobotoMedium";
-    src: url("/fonts/RobotoMedium.ttf");
+    src: url("./fonts/RobotoMedium.ttf");
 }
 
 /* BASIC STYLES */
@@ -117,7 +117,7 @@
 }
 
 .lang-item_active::before {
-    background-image: url("/img/fixed/lang-bg.svg");
+    background-image: url("./img/fixed/lang-bg.svg");
     content: "";
     width: 50px;
     height: 15px;
@@ -160,13 +160,13 @@
 /* #section-1 */
 
 .open-message {
-    background-image: url("/img/01/message-bg.svg");
+    background-image: url("./img/01/message-bg.svg");
     background-repeat: no-repeat;
     width: 225px;
 }
 
 .open-message_white {
-    background-image: url("/img/09/message-bg_white.svg")
+    background-image: url("./img/09/message-bg_white.svg")
 }
 
 .open-title {
@@ -228,7 +228,7 @@
 /* #section-6 */
 
 #section-6 {
-    background-image: url("/img/06/materials-bg.svg");
+    background-image: url("./img/06/materials-bg.svg");
     background-size: cover;
     background-position: right bottom;
 }
@@ -244,7 +244,7 @@
 /* #section-7 */
 
 #section-7 {
-    background-image: url("/img/07/about-bg.svg");
+    background-image: url("./img/07/about-bg.svg");
     background-size: cover;
 }
 

@@ -3,72 +3,72 @@
 
 @font-face {
     font-family: 'DOCKERONE';
-    src: url('/fonts/DOCKERONE.eot');
-    src: url('/fonts/DOCKERONE.eot') format('embedded-opentype'),
-         url('/fonts/DOCKERONE.woff2') format('woff2'),
-         url('/fonts/DOCKERONE.woff') format('woff'),
-         url('/fonts/DOCKERONE.ttf') format('truetype'),
-         url('/fonts/DOCKERONE.svg#DOCKERONE') format('svg');
+    src: url('./fonts/DOCKERONE.eot');
+    src: url('./fonts/DOCKERONE.eot') format('embedded-opentype'),
+         url('./fonts/DOCKERONE.woff2') format('woff2'),
+         url('./fonts/DOCKERONE.woff') format('woff'),
+         url('./fonts/DOCKERONE.ttf') format('truetype'),
+         url('./fonts/DOCKERONE.svg#DOCKERONE') format('svg');
 }
 
 @font-face {
     font-family: 'HeliosC';
-    src: url('/fonts/HeliosC.eot');
-    src: url('/fonts/HeliosC.eot') format('embedded-opentype'),
-         url('/fonts/HeliosC.woff2') format('woff2'),
-         url('/fonts/HeliosC.woff') format('woff'),
-         url('/fonts/HeliosC.ttf') format('truetype'),
-         url('/fonts/HeliosC.svg#HeliosC') format('svg');
+    src: url('./fonts/HeliosC.eot');
+    src: url('./fonts/HeliosC.eot') format('embedded-opentype'),
+         url('./fonts/HeliosC.woff2') format('woff2'),
+         url('./fonts/HeliosC.woff') format('woff'),
+         url('./fonts/HeliosC.ttf') format('truetype'),
+         url('./fonts/HeliosC.svg#HeliosC') format('svg');
 }
 
 @font-face {
     font-family: 'HeliosCondBold';
-    src: url('/fonts/HeliosCondBold.eot');
-    src: url('/fonts/HeliosCondBold.eot') format('embedded-opentype'),
-         url('/fonts/HeliosCondBold.woff2') format('woff2'),
-         url('/fonts/HeliosCondBold.woff') format('woff'),
-         url('/fonts/HeliosCondBold.ttf') format('truetype'),
-         url('/fonts/HeliosCondBold.svg#HeliosCondBold') format('svg');
+    src: url('./fonts/HeliosCondBold.eot');
+    src: url('./fonts/HeliosCondBold.eot') format('embedded-opentype'),
+         url('./fonts/HeliosCondBold.woff2') format('woff2'),
+         url('./fonts/HeliosCondBold.woff') format('woff'),
+         url('./fonts/HeliosCondBold.ttf') format('truetype'),
+         url('./fonts/HeliosCondBold.svg#HeliosCondBold') format('svg');
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('/fonts/Roboto.eot');
-    src: url('/fonts/Roboto.eot') format('embedded-opentype'),
-         url('/fonts/Roboto.woff2') format('woff2'),
-         url('/fonts/Roboto.woff') format('woff'),
-         url('/fonts/Roboto.ttf') format('truetype'),
-         url('/fonts/Roboto.svg#Roboto') format('svg');
+    src: url('./fonts/Roboto.eot');
+    src: url('./fonts/Roboto.eot') format('embedded-opentype'),
+         url('./fonts/Roboto.woff2') format('woff2'),
+         url('./fonts/Roboto.woff') format('woff'),
+         url('./fonts/Roboto.ttf') format('truetype'),
+         url('./fonts/Roboto.svg#Roboto') format('svg');
 }
 
 @font-face {
     font-family: 'RobotoBlack';
-    src: url('/fonts/RobotoBlack.eot');
-    src: url('/fonts/RobotoBlack.eot') format('embedded-opentype'),
-         url('/fonts/RobotoBlack.woff2') format('woff2'),
-         url('/fonts/RobotoBlack.woff') format('woff'),
-         url('/fonts/RobotoBlack.ttf') format('truetype'),
-         url('/fonts/RobotoBlack.svg#RobotoBlack') format('svg');
+    src: url('./fonts/RobotoBlack.eot');
+    src: url('./fonts/RobotoBlack.eot') format('embedded-opentype'),
+         url('./fonts/RobotoBlack.woff2') format('woff2'),
+         url('./fonts/RobotoBlack.woff') format('woff'),
+         url('./fonts/RobotoBlack.ttf') format('truetype'),
+         url('./fonts/RobotoBlack.svg#RobotoBlack') format('svg');
 }
 
 @font-face {
     font-family: 'RobotoBold';
-    src: url('/fonts/RobotoBold.eot');
-    src: url('/fonts/RobotoBold.eot') format('embedded-opentype'),
-         url('/fonts/RobotoBold.woff2') format('woff2'),
-         url('/fonts/RobotoBold.woff') format('woff'),
-         url('/fonts/RobotoBold.ttf') format('truetype'),
-         url('/fonts/RobotoBold.svg#RobotoBold') format('svg');
+    src: url('./fonts/RobotoBold.eot');
+    src: url('./fonts/RobotoBold.eot') format('embedded-opentype'),
+         url('./fonts/RobotoBold.woff2') format('woff2'),
+         url('./fonts/RobotoBold.woff') format('woff'),
+         url('./fonts/RobotoBold.ttf') format('truetype'),
+         url('./fonts/RobotoBold.svg#RobotoBold') format('svg');
 }
 
 @font-face {
     font-family: 'RobotoMedium';
-    src: url('/fonts/RobotoMedium.eot');
-    src: url('/fonts/RobotoMedium.eot') format('embedded-opentype'),
-         url('/fonts/RobotoMedium.woff2') format('woff2'),
-         url('/fonts/RobotoMedium.woff') format('woff'),
-         url('/fonts/RobotoMedium.ttf') format('truetype'),
-         url('/fonts/RobotoMedium.svg#RobotoMedium') format('svg');
+    src: url('./fonts/RobotoMedium.eot');
+    src: url('./fonts/RobotoMedium.eot') format('embedded-opentype'),
+         url('./fonts/RobotoMedium.woff2') format('woff2'),
+         url('./fonts/RobotoMedium.woff') format('woff'),
+         url('./fonts/RobotoMedium.ttf') format('truetype'),
+         url('./fonts/RobotoMedium.svg#RobotoMedium') format('svg');
 }
 
 
@@ -177,7 +177,7 @@
 }
 
 .lang-item_active::before {
-    background-image: url("/img/fixed/lang-bg.svg");
+    background-image: url("./img/fixed/lang-bg.svg");
     content: "";
     width: 50px;
     height: 15px;
@@ -288,7 +288,7 @@
 }
 
 .send-message {
-    background-image: url("/img/09/message-bg_white.svg");
+    background-image: url("./img/09/message-bg_white.svg");
     background-repeat: no-repeat;
     width: 225px;
 }
@@ -311,13 +311,13 @@
 /* #section-1 */
 
 .open-message {
-    background-image: url("/img/01/message-bg.svg");
+    background-image: url("./img/01/message-bg.svg");
     background-repeat: no-repeat;
     width: 225px;
 }
 
 .open-message_white {
-    background-image: url("/img/09/message-bg_white.svg")
+    background-image: url("./img/09/message-bg_white.svg")
 }
 
 .open-title {
@@ -344,7 +344,7 @@
 }
 
 .production__name {
-    background-image: url("/img/02/prod-1-title.svg");
+    background-image: url("./img/02/prod-1-title.svg");
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -355,23 +355,23 @@
 }
 
 .production__name_second {
-    background-image: url("/img/02/prod-2-title.svg");
+    background-image: url("./img/02/prod-2-title.svg");
 }
 
 .production__name_third {
-    background-image: url("/img/02/prod-3-title.svg");
+    background-image: url("./img/02/prod-3-title.svg");
 }
 
 .production__name_fourth {
-    background-image: url("/img/02/prod-4-title.svg");
+    background-image: url("./img/02/prod-4-title.svg");
 }
 
 .production__name_fifth {
-    background-image: url("/img/02/prod-5-title.svg");
+    background-image: url("./img/02/prod-5-title.svg");
 }
 
 .production__name_sixth {
-    background-image: url("/img/02/prod-6-title.svg");
+    background-image: url("./img/02/prod-6-title.svg");
 }
 
 .production__name_text {
@@ -481,25 +481,25 @@
     font-family: "HeliosCondBold";
     font-size: 36px;
     color: #434343;
-    background: url("/img/03/gofr-1-title.svg");
+    background: url("./img/03/gofr-1-title.svg");
     background-repeat: no-repeat;
     background-position: center 15px;
 }
 
 .gofrotara__h3_second {
-    background: url("/img/03/gofr-2-title.svg");
+    background: url("./img/03/gofr-2-title.svg");
     background-repeat: no-repeat;
     background-position: left 15px;
 }
 
 .gofrotara__h3_third {
-    background: url("/img/03/gofr-3-title.svg");
+    background: url("./img/03/gofr-3-title.svg");
     background-repeat: no-repeat;
     background-position: left 15px;
 }
 
 .gofrotara__h3_fourth {
-    background: url("/img/03/gofr-4-title.svg");
+    background: url("./img/03/gofr-4-title.svg");
     background-repeat: no-repeat;
     background-position: left 15px;
 }
@@ -579,19 +579,19 @@
     font-family: "HeliosCondBold";
     font-size: 36px;
     color: #434343;
-    background: url("/img/04/pack-1-title.svg");
+    background: url("./img/04/pack-1-title.svg");
     background-repeat: no-repeat;
     background-position: left 15px;
 }
 
 .packages__h3_second {
-    background: url("/img/04/pack-2-title.svg");
+    background: url("./img/04/pack-2-title.svg");
     background-repeat: no-repeat;
     background-position: left 15px;
 }
 
 .packages__h3_third {
-    background: url("/img/04/pack-3-title.svg");
+    background: url("./img/04/pack-3-title.svg");
     background-repeat: no-repeat;
     background-position: left center;
 }
@@ -691,7 +691,7 @@
 /* #section-6 */
 
 #section-6 {
-    background-image: url("/img/06/materials-bg.svg");
+    background-image: url("./img/06/materials-bg.svg");
     background-size: cover;
     background-position: right bottom;
 }
@@ -707,7 +707,7 @@
 /* #section-7 */
 
 #section-7 {
-    background-image: url("/img/07/about-bg.svg");
+    background-image: url("./img/07/about-bg.svg");
     background-size: cover;
 }
 

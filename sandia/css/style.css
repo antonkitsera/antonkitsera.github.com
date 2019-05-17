@@ -1,45 +1,76 @@
 
-
 /* FONTS */
 
 @font-face {
-    font-family: "DOCKERONE";
-    src: url("./fonts/DOCKERONE.ttf");
-    /*src: 
-    url("css/fonts/Harabara.woff") format("woff"),
-    url("css/fonts/Harabara.otf") format("opentype"),
-    url("css/fonts/Harabara.svg#filename") format("svg");*/
+    font-family: 'DOCKERONE';
+    src: url('/fonts/DOCKERONE.eot');
+    src: url('/fonts/DOCKERONE.eot') format('embedded-opentype'),
+         url('/fonts/DOCKERONE.woff2') format('woff2'),
+         url('/fonts/DOCKERONE.woff') format('woff'),
+         url('/fonts/DOCKERONE.ttf') format('truetype'),
+         url('/fonts/DOCKERONE.svg#DOCKERONE') format('svg');
 }
 
 @font-face {
-    font-family: "HeliosC";
-    src: url("./fonts/HeliosC.otf");
+    font-family: 'HeliosC';
+    src: url('/fonts/HeliosC.eot');
+    src: url('/fonts/HeliosC.eot') format('embedded-opentype'),
+         url('/fonts/HeliosC.woff2') format('woff2'),
+         url('/fonts/HeliosC.woff') format('woff'),
+         url('/fonts/HeliosC.ttf') format('truetype'),
+         url('/fonts/HeliosC.svg#HeliosC') format('svg');
 }
 
 @font-face {
-    font-family: "HeliosCondBold";
-    src: url("./fonts/HeliosCondBold.otf");
+    font-family: 'HeliosCondBold';
+    src: url('/fonts/HeliosCondBold.eot');
+    src: url('/fonts/HeliosCondBold.eot') format('embedded-opentype'),
+         url('/fonts/HeliosCondBold.woff2') format('woff2'),
+         url('/fonts/HeliosCondBold.woff') format('woff'),
+         url('/fonts/HeliosCondBold.ttf') format('truetype'),
+         url('/fonts/HeliosCondBold.svg#HeliosCondBold') format('svg');
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url("./fonts/Roboto.ttf");
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto.eot');
+    src: url('/fonts/Roboto.eot') format('embedded-opentype'),
+         url('/fonts/Roboto.woff2') format('woff2'),
+         url('/fonts/Roboto.woff') format('woff'),
+         url('/fonts/Roboto.ttf') format('truetype'),
+         url('/fonts/Roboto.svg#Roboto') format('svg');
 }
 
 @font-face {
-    font-family: "RobotoBlack";
-    src: url("./fonts/RobotoBlack.ttf");
+    font-family: 'RobotoBlack';
+    src: url('/fonts/RobotoBlack.eot');
+    src: url('/fonts/RobotoBlack.eot') format('embedded-opentype'),
+         url('/fonts/RobotoBlack.woff2') format('woff2'),
+         url('/fonts/RobotoBlack.woff') format('woff'),
+         url('/fonts/RobotoBlack.ttf') format('truetype'),
+         url('/fonts/RobotoBlack.svg#RobotoBlack') format('svg');
 }
 
 @font-face {
-    font-family: "RobotoBold";
-    src: url("./fonts/RobotoBold.ttf");
+    font-family: 'RobotoBold';
+    src: url('/fonts/RobotoBold.eot');
+    src: url('/fonts/RobotoBold.eot') format('embedded-opentype'),
+         url('/fonts/RobotoBold.woff2') format('woff2'),
+         url('/fonts/RobotoBold.woff') format('woff'),
+         url('/fonts/RobotoBold.ttf') format('truetype'),
+         url('/fonts/RobotoBold.svg#RobotoBold') format('svg');
 }
 
 @font-face {
-    font-family: "RobotoMedium";
-    src: url("./fonts/RobotoMedium.ttf");
+    font-family: 'RobotoMedium';
+    src: url('/fonts/RobotoMedium.eot');
+    src: url('/fonts/RobotoMedium.eot') format('embedded-opentype'),
+         url('/fonts/RobotoMedium.woff2') format('woff2'),
+         url('/fonts/RobotoMedium.woff') format('woff'),
+         url('/fonts/RobotoMedium.ttf') format('truetype'),
+         url('/fonts/RobotoMedium.svg#RobotoMedium') format('svg');
 }
+
 
 /* BASIC STYLES */
 
@@ -84,6 +115,35 @@
     height: 100%;
 }
 
+/* preload page animation */
+
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-repeat: no-repeat; 
+    background-color: #C6D400;
+    background-position: center;
+    display: flex;
+ }
+
+.preloader__img {
+    margin: 0 auto;    
+    -webkit-animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
 /* navbar */
 
 .nav-link {
@@ -117,7 +177,7 @@
 }
 
 .lang-item_active::before {
-    background-image: url("./img/fixed/lang-bg.svg");
+    background-image: url("/img/fixed/lang-bg.svg");
     content: "";
     width: 50px;
     height: 15px;
@@ -145,6 +205,7 @@
     display: flex;
     position: fixed;
     bottom: 0;
+    z-index: 1000;
 }
 
 .scroll__item {
@@ -156,17 +217,107 @@
     right: 0;
 }
 
+/* message__block */
+
+.message {
+    position: fixed;
+    z-index: 500;
+    background-color: #C6D400;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition-duration: 2s;
+}
+
+.message__block {
+    align-self: center;
+}
+
+.message__form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.message__title {
+    color: #FFFFFF;
+    font-size: 70px !important;
+    max-width: 440px;
+}
+
+.message__item {
+    width: 100%;
+    max-width: 280px;
+    height: 150px;
+}
+
+.message__item_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.message__item_long {
+    max-width: 415px;
+}
+
+.message__text {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.input__item {
+    background-color: transparent;
+    width: 100%;
+    color: #000000;
+    font-family: "RobotoBold";
+    font-size: 20px;
+    border: none;
+}
+
+.input__item:focus {
+    border-color: #C6D400;
+    background-color: transparent;
+}
+
+.placeholder_color::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FFFFFF;
+    opacity: 1; /* Firefox */
+}
+
+.send-message {
+    background-image: url("/img/09/message-bg_white.svg");
+    background-repeat: no-repeat;
+    width: 225px;
+}
+
+.send-title {
+    font-size: 23px;
+    font-family: "HeliosCondBold";
+    color: #000000;
+    transform: translateY(-6px) translateX(15px);
+}
+
+.message__close {
+    position: fixed;
+    right: 0;
+    top: 45%;
+}
+
+
 
 /* #section-1 */
 
 .open-message {
-    background-image: url("./img/01/message-bg.svg");
+    background-image: url("/img/01/message-bg.svg");
     background-repeat: no-repeat;
     width: 225px;
 }
 
 .open-message_white {
-    background-image: url("./img/09/message-bg_white.svg")
+    background-image: url("/img/09/message-bg_white.svg")
 }
 
 .open-title {
@@ -178,12 +329,71 @@
 
 /* #section-2 */
 
+.production {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .production__title {
     text-align: center;
 }
 
+.production__item {
+    height: 370px;
+}
+
+.production__name {
+    background-image: url("/img/02/prod-1-title.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.production__name_second {
+    background-image: url("/img/02/prod-2-title.svg");
+}
+
+.production__name_third {
+    background-image: url("/img/02/prod-3-title.svg");
+}
+
+.production__name_fourth {
+    background-image: url("/img/02/prod-4-title.svg");
+}
+
+.production__name_fifth {
+    background-image: url("/img/02/prod-5-title.svg");
+}
+
+.production__name_sixth {
+    background-image: url("/img/02/prod-6-title.svg");
+}
+
+.production__name_text {
+    color: #000000;
+    font-family: "HeliosCondBold";
+    font-size: 39px;
+    text-align: center;
+}
+
+.production__image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.production__image_center {
+    left: 20%;
+}
+
 .tab-content {
-    height: 400px;
+    height: 390px;
 }
 
 .tab-pane {
@@ -225,15 +435,268 @@
     color: #ffffff;
 }
 
+/* #section-3 */
+
+.gofrotara {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.gofrotara__title {
+    text-align: center;
+}
+
+.tab-item_big {
+    width: 243px;
+    font-size: 24px;
+}
+
+.tab-link_big {
+    padding-top: 3px;
+}
+
+.gofrotara__content {
+    display: flex;
+}
+
+.gofrotara__item {
+    width: 100%;
+}
+
+.gofrotara__block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.gofrotara__desc {
+    max-width: 260px;
+}
+
+.gofrotara__h3 {
+    font-family: "HeliosCondBold";
+    font-size: 36px;
+    color: #434343;
+    background: url("/img/03/gofr-1-title.svg");
+    background-repeat: no-repeat;
+    background-position: center 15px;
+}
+
+.gofrotara__h3_second {
+    background: url("/img/03/gofr-2-title.svg");
+    background-repeat: no-repeat;
+    background-position: left 15px;
+}
+
+.gofrotara__h3_third {
+    background: url("/img/03/gofr-3-title.svg");
+    background-repeat: no-repeat;
+    background-position: left 15px;
+}
+
+.gofrotara__h3_fourth {
+    background: url("/img/03/gofr-4-title.svg");
+    background-repeat: no-repeat;
+    background-position: left 15px;
+}
+
+.gofrotara__text {
+    font-family: "RobotoMedium";
+    font-size: 16px;
+    color: #434343;
+}
+
+.gofrotara__picture {
+    width: 205px;
+}
+
+/* #section-4 */ 
+
+
+.packages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.packages__title {
+    text-align: center;
+}
+
+.tab-item_medium {
+    width: 230px;
+    font-size: 24px;
+}
+
+.tab-item_higher {
+    height: 73px;
+    line-height: 25px;
+}
+
+.tab-link_big {
+    padding-top: 3px;
+}
+
+.tab-link_left {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.tab-link_top {
+    padding-top: 5px;
+}
+
+.packages__content {
+    display: flex;
+}
+
+.packages__item {
+    width: 100%;
+}
+
+.packages__block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.packages__desc {
+    max-width: 280px;
+}
+
+.packages__desc_big {
+    max-width: 320px;
+}
+
+.packages__h3 {
+    font-family: "HeliosCondBold";
+    font-size: 36px;
+    color: #434343;
+    background: url("/img/04/pack-1-title.svg");
+    background-repeat: no-repeat;
+    background-position: left 15px;
+}
+
+.packages__h3_second {
+    background: url("/img/04/pack-2-title.svg");
+    background-repeat: no-repeat;
+    background-position: left 15px;
+}
+
+.packages__h3_third {
+    background: url("/img/04/pack-3-title.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.packages__text {
+    font-family: "RobotoMedium";
+    font-size: 16px;
+    color: #434343;
+}
+
+.packages__picture {
+    width: 205px;
+    display: flex;
+    justify-content: center;
+}
+
+/* #section-5 */
+
+.materials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.materials__title {
+    text-align: center;
+}
+
+.tab-pills {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-item_first {
+    width: 273px;
+}
+
+.tab-item_second {
+    width: 281px;
+}
+
+.tab-item_third {
+    width: 274px;
+}
+
+.materials__content {
+    display: flex;
+}
+
+.materials__item {
+    width: 100%;
+}
+
+.materials__block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.materials__desc {
+    max-width: 400px;
+}
+
+.materials__h3 {
+    font-family: "DOCKERONE";
+    font-size: 50px;
+    color: #434343;
+}
+
+.materials__text {
+    font-family: "RobotoMedium";
+    font-size: 16px;
+    color: #434343;
+    max-width: 390px;
+}
+
+.materials__text_yellow {
+    font-family: "HeliosCondBold";
+    font-size: 20px;
+    color: #C6D400;
+}
+
+.materials__text_long {
+    max-width: 440px;
+    margin-top: 15px;
+}
+
+.materials__picture {
+    max-width: 489px;
+    display: flex;
+    flex-direction: column;
+}
+
 /* #section-6 */
 
 #section-6 {
-    background-image: url("./img/06/materials-bg.svg");
+    background-image: url("/img/06/materials-bg.svg");
     background-size: cover;
     background-position: right bottom;
 }
 
-.materials-text {
+.materials-2-text {
     max-width: 350px;
     color: #434343;
     font-family: "RobotoBold";
@@ -244,7 +707,7 @@
 /* #section-7 */
 
 #section-7 {
-    background-image: url("./img/07/about-bg.svg");
+    background-image: url("/img/07/about-bg.svg");
     background-size: cover;
 }
 
@@ -315,7 +778,7 @@
 /* #section-9 */
 
 
-#contacts {
+#section-9 {
     background-color: #C6D400;
     color: #000000;
 }

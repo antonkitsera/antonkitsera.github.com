@@ -173,7 +173,7 @@ let headerLogo = document.getElementById("header-logo");
 
 function addLogo() {
     if(window.location.hash != pageIdList[0]) {
-        headerLogo.src = "../img/fixed/header-logo.svg";
+        headerLogo.src = "./img/fixed/header-logo.svg";
     } else {
         headerLogo.src = "";
     }

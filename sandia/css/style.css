@@ -90,21 +90,9 @@
     color: #434343;
 }
 
-.h3 {
-
-}
-
-.h4 {
-
-}
-
 .h5 {
     font-family: "RobotoBold";
     color: #434343;
-}
-
-.h6 {
-
 }
 
 .container {
@@ -176,14 +164,17 @@
     z-index: 100;
 }
 
-.lang-item_active::before {
+.lang-link_active {
     background-image: url("../img/fixed/lang-bg.svg");
-    content: "";
     width: 50px;
-    height: 15px;
-    transform: translateX(-20px) translateY(5px);
-    position: fixed;
-    z-index: -1;
+    height: 14px;
+    display: block;
+    transform: translateY(-7px);
+}
+
+.lang-item_span {
+    display: block;
+    transform: translateY(-6px) translateX(-10px);
 }
 
 .lang-link, .lang-link:hover, .lang-link:active {
@@ -199,7 +190,61 @@
     color: #838383;
 }
 
-/* scroll__block*/
+/*
+///////////////
+SIDE NAVIGATION
+///////////////
+*/
+
+.nav-side__block {
+    position: fixed;
+    z-index: 100000;
+    top: 27%;
+    right: 0%;
+}
+
+.nav-side__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav-side__item {
+    font-family: "HeliosCondBold";
+    font-size: 17px;
+    text-align: right;
+}
+
+.nav-side__link {
+    color: #434343;
+    padding-right: 20px;
+}
+
+.nav-side__link:hover {
+    text-decoration: none;
+    color: #434343;
+}
+
+.nav-side__name {
+    display: none;
+}
+
+.nav-side-item_active {
+    background-image: url("../img/fixed/nav-side_bg.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    width: 110px;
+}
+
+.nav-side_active {
+    display: inline;
+}
+
+
+/*
+///////////////
+SCROLL BLOCK
+///////////////
+*/
 
 .scroll__block {
     display: flex;
@@ -215,6 +260,43 @@
 .scroll__item_right {
     position: fixed;
     right: 0;
+}
+
+/*
+///////////////
+DYNAMIC STYLES
+///////////////
+*/
+
+.lang-link_white, .lang-link_whiteActive, .nav-link_white {
+    color: #F8F8F8;
+    transition-duration: 2500ms;
+}
+
+.lang-link_whiteActive {
+    color: #000000;
+}
+
+
+
+.lang-link_black, .lang-link_blackActive, .nav-link_black {
+    color: #000000;
+    transition-duration: 2500ms;
+}
+
+.animateImages {
+    animation-name: opacityAnim;
+    animation-delay: 1000ms;
+    animation-duration: 2500ms;
+}
+
+@keyframes opacityAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* message__block */
@@ -310,6 +392,11 @@
 
 /* #section-1 */
 
+.home {
+    display: flex;
+    height: 100%;
+}
+
 .open-message {
     background-image: url("../img/01/message-bg.svg");
     background-repeat: no-repeat;
@@ -392,8 +479,13 @@
     left: 20%;
 }
 
+.production-btn {
+    transform: translateY(-35px);
+    z-index: 10;
+}
+
 .tab-content {
-    height: 390px;
+    height: 80%;
 }
 
 .tab-pane {
@@ -435,6 +527,20 @@
     color: #ffffff;
 }
 
+.production__header_desktop {
+    display: flex;
+    justify-content: center;
+    transform: translateY(35px);
+}
+
+.production__header_mobile {
+    display: none;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    display: none;
+}
+
 /* #section-3 */
 
 .gofrotara {
@@ -446,6 +552,16 @@
 
 .gofrotara__title {
     text-align: center;
+}
+
+.gofrotara__header_desktop {
+    display: flex;
+    justify-content: center;
+    transform: translateY(35px);
+}
+
+.gofrotara__header_mobile {
+    display: none;
 }
 
 .tab-item_big {
@@ -471,6 +587,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    transform: translateY(35px);
 }
 
 .gofrotara__desc {
@@ -528,6 +645,15 @@
     text-align: center;
 }
 
+.packages__header_desktop {
+    display: inline;
+    transform: translateY(35px);
+}
+
+.packages__header_mobile {
+    display: none;
+}
+
 .tab-item_medium {
     width: 230px;
     font-size: 24px;
@@ -565,6 +691,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    transform: translateY(35px);
 }
 
 .packages__desc {
@@ -619,6 +746,10 @@
 
 .materials__title {
     text-align: center;
+}
+
+.materials-btn {
+    transform: translateY(-35px);
 }
 
 .tab-pills {
@@ -853,4 +984,284 @@
 .contacts-copyright {
     font-family: "HeliosCondBold";
     font-size: 15px;
+}
+
+@media (max-width: 1000px) {
+    .message__title {
+        font-size: 45px !important;
+        align-self: center;
+    }
+
+    .message__form {
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+
+    .send-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .send-message {
+        text-align: left;
+    }
+
+    .home__title {
+        font-size: 50px !important;
+    }
+
+    .materials-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .materials-2-title {
+        font-size: 40px !important;
+    }
+
+    .materials-2-text {
+        color: #434343;
+        padding-top: 0;
+    }
+
+    #section-6 {
+        background-image: url("../img/06/materials-bg_mobile.svg");
+        background-size: cover;
+        background-position: right bottom;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .home {
+        text-align: center;
+    }
+
+    .open-message {
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .home__title {
+        font-size: 55px !important;
+        padding-left: 30px;
+    }
+
+    .home__text {
+        padding-left: 30px;
+    }
+
+    .home__img {
+        display: none !important;
+    }
+
+    .production__name {
+        transform: scale(0.7);
+        left: 0;    
+        background-position: center 10px;
+    }
+
+    .production__name_fourth, .production__name_sixth {
+        background-size: 385px;
+    }
+
+    .production__name_fifth {
+        background-size: 395px;
+    }
+
+    .production__name_text {
+        font-size: 33px;
+    }
+    
+    .production__image {
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .production__image_width {
+        width: 100%;
+    }
+
+    .production__image_center {
+        left: 0;
+    }
+
+    .production__title {
+        font-size: 45px !important;
+    }
+
+    .production-btn {
+        display: none !important;
+    }
+
+    .production__header_desktop {
+        display: none;
+    }
+
+    .production__header_mobile {
+        display: flex;
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url("../img/prev.svg");
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("../img/next.svg");
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+        top: auto;
+        bottom: 20%;
+        opacity: 1;
+        width: 13%;
+        display: flex;
+    }
+
+    .carousel-indicators li {
+        background-color: #464646;
+    }
+
+    .about-h2 {
+        font-size: 45px !important;
+    }
+
+    .about-p {
+        font-size: 15px;
+    }
+
+    .about-h5_yellow {
+        font-size: 15px;
+    }
+
+    .about-second {
+        margin-left: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .partners-header {
+        padding-bottom: 10px;
+    }
+
+    .partners-h2 {
+        font-size: 45px !important;
+    }
+
+    .partners-item {
+        width: 50%;
+    }
+
+    .partners__img {
+        width: 95%;
+    }
+
+    .contacts-block {
+        padding-top: 0;
+    }
+
+    .contacts-p {
+        text-align: center;
+    }
+
+    .contacts-second {
+        margin-left: 0;
+    }
+
+    .contacts-h2 {
+        font-size: 45px !important;
+    }
+
+    .tab-pills {
+        display: none !important;
+    }
+
+    .packages__block {
+        flex-direction: column;
+        transform: translateY(0);
+    }
+
+    .packages__header_desktop {
+        display: none;
+    }
+
+    .packages__header_mobile {
+        display: inline;
+        transform: translateY(35px);
+    }
+
+    .packages__title {
+        font-size: 45px !important;
+        
+    }
+
+    .packages__text {
+        display: none;
+    }
+
+    .gofrotara__text_hide {
+        display: none;
+    }
+
+    #carouselPackages.fp-tableCell {
+        height: 515px;
+    }
+
+    .gofrotara__header_desktop {
+        display: none;
+    }
+
+    .gofrotara__header_mobile {
+        display: flex;
+    }
+
+    .gofrotara__item {
+        align-self: center;
+    }
+
+    .gofrotara__title {
+        font-size: 45px !important;
+    }
+
+    .gofrotara__block {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .materials__block {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .materials__text_yellow {
+        display: none;
+    }
+
+    .materials__desc {
+        width: 100%;
+    }
+
+    .materials__h3 {
+        font-size: 35px !important;
+    }
+
+    .materials__image {
+        width: 100%;
+    }
+
+    .materials__text_long {
+        display: none;
+    }
+
+    .materials__text_hide {
+        display: none;
+    }
 }

@@ -19,12 +19,12 @@ let dynamicStyle = () => {
         langLinkSecond.classList.add("lang-link_white");
         langLinkThird.classList.add("lang-link_white");
 
-        mailIcon.src="../img/fixed/mail-icon_white.svg";
-        scrollUp.src="../img/fixed/scroll-up_white.svg";
-        scrollDown.src="../img/fixed/scroll-down_white.svg";
+        mailIcon.src="./img/fixed/mail-icon_white.svg";
+        scrollUp.src="./img/fixed/scroll-up_white.svg";
+        scrollDown.src="./img/fixed/scroll-down_white.svg";
         console.log("ABOUT US");
 
-        langBackgroundSource.style.backgroundImage = "url('../img/fixed/lang-bg.svg')";
+        langBackgroundSource.style.backgroundImage = "url('./img/fixed/lang-bg.svg')";
 
     } else if(window.location.hash == page__hashList[1]) {
         console.log("CONTACTS");
@@ -38,14 +38,14 @@ let dynamicStyle = () => {
         langLinkSecond.classList.add("lang-link_black");
         langLinkThird.classList.add("lang-link_black");
 
-        mailIcon.src="../img/fixed/mail-icon_black.svg";
-        scrollUp.src="../img/fixed/scroll-up_black.svg";
+        mailIcon.src="./img/fixed/mail-icon_black.svg";
+        scrollUp.src="./img/fixed/scroll-up_black.svg";
         scrollDown.src="";
 
         mailIcon.classList.remove("animateImages");
         mailIcon.classList.add("animateImages");
 
-        langBackgroundSource.style.backgroundImage = "url('../img/fixed/lang-bg_black.svg')";
+        langBackgroundSource.style.backgroundImage = "url('./img/fixed/lang-bg_black.svg')";
 
     } else {
         console.log("WRONG PAGE");
@@ -120,7 +120,7 @@ let headerLogo = document.getElementById("header-logo");
 
 let addLogo = () => {
     if(window.location.hash != pageIdList[0]) {
-        headerLogo.src = "../img/fixed/header-logo.svg";
+        headerLogo.src = "./img/fixed/header-logo.svg";
     } else {
         headerLogo.src = "";
     }

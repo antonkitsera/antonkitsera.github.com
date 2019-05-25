@@ -221,6 +221,14 @@ SIDE NAVIGATION
     color: #434343;
 }
 
+.nav-side__link_black {
+    color: #000000;
+}
+
+.nav-side__link_white {
+    color: #F8F8F8;
+}
+
 .nav-side__name {
     display: none;
 }

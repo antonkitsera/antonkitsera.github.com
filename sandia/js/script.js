@@ -149,6 +149,17 @@ let navSideItem_07  = document.getElementById("nav-side-item_07");
 let navSideItem_08  = document.getElementById("nav-side-item_08");
 let navSideItem_09  = document.getElementById("nav-side-item_09");
 
+
+let navSideLink_01  = document.getElementById("nav-side-link-01");
+let navSideLink_02  = document.getElementById("nav-side-link-02");
+let navSideLink_03  = document.getElementById("nav-side-link-03");
+let navSideLink_04  = document.getElementById("nav-side-link-04");
+let navSideLink_05  = document.getElementById("nav-side-link-05");
+let navSideLink_06  = document.getElementById("nav-side-link-06");
+let navSideLink_07  = document.getElementById("nav-side-link-07");
+let navSideLink_08  = document.getElementById("nav-side-link-08");
+let navSideLink_09  = document.getElementById("nav-side-link-09");
+
 let navSideShowActive = () => {
     if (window.location.hash == pageIdList[0]) {
       navSideSpan_01.classList.add("nav-side_active");
@@ -174,6 +185,26 @@ let navSideShowActive = () => {
       navSideItem_07.classList.remove("nav-side-item_active");
       navSideItem_08.classList.remove("nav-side-item_active");
       navSideItem_09.classList.remove("nav-side-item_active");
+      navSideItem_09.style.backgroundImage = "";
+
+      navSideLink_01.classList.remove("nav-side__link_black");
+      navSideLink_02.classList.remove("nav-side__link_black");
+      navSideLink_03.classList.remove("nav-side__link_black");
+      navSideLink_04.classList.remove("nav-side__link_black");
+      navSideLink_05.classList.remove("nav-side__link_black");
+      navSideLink_06.classList.remove("nav-side__link_black");
+      navSideLink_07.classList.remove("nav-side__link_black");
+      navSideLink_08.classList.remove("nav-side__link_black");
+      navSideLink_09.classList.remove("nav-side__link_black");
+
+      navSideLink_01.classList.remove("nav-side__link_white");
+      navSideLink_02.classList.remove("nav-side__link_white");
+      navSideLink_03.classList.remove("nav-side__link_white");
+      navSideLink_04.classList.remove("nav-side__link_white");
+      navSideLink_05.classList.remove("nav-side__link_white");
+      navSideLink_06.classList.remove("nav-side__link_white");
+      navSideLink_08.classList.remove("nav-side__link_white");
+      navSideLink_09.classList.remove("nav-side__link_white");
 
     } else if(window.location.hash == pageIdList[1]) {
       navSideSpan_02.classList.add("nav-side_active");
@@ -198,6 +229,26 @@ let navSideShowActive = () => {
       navSideItem_07.classList.remove("nav-side-item_active");
       navSideItem_08.classList.remove("nav-side-item_active");
       navSideItem_09.classList.remove("nav-side-item_active");
+      navSideItem_09.style.backgroundImage = "";
+
+      navSideLink_01.classList.remove("nav-side__link_black");
+      navSideLink_02.classList.remove("nav-side__link_black");
+      navSideLink_03.classList.remove("nav-side__link_black");
+      navSideLink_04.classList.remove("nav-side__link_black");
+      navSideLink_05.classList.remove("nav-side__link_black");
+      navSideLink_06.classList.remove("nav-side__link_black");
+      navSideLink_07.classList.remove("nav-side__link_black");
+      navSideLink_08.classList.remove("nav-side__link_black");
+      navSideLink_09.classList.remove("nav-side__link_black");
+
+      navSideLink_01.classList.remove("nav-side__link_white");
+      navSideLink_02.classList.remove("nav-side__link_white");
+      navSideLink_03.classList.remove("nav-side__link_white");
+      navSideLink_04.classList.remove("nav-side__link_white");
+      navSideLink_05.classList.remove("nav-side__link_white");
+      navSideLink_06.classList.remove("nav-side__link_white");
+      navSideLink_08.classList.remove("nav-side__link_white");
+      navSideLink_09.classList.remove("nav-side__link_white");
 
     } else if(window.location.hash == pageIdList[2]) {
       navSideSpan_03.classList.add("nav-side_active");
@@ -222,6 +273,26 @@ let navSideShowActive = () => {
       navSideItem_07.classList.remove("nav-side-item_active");
       navSideItem_08.classList.remove("nav-side-item_active");
       navSideItem_09.classList.remove("nav-side-item_active");
+      navSideItem_09.style.backgroundImage = "";
+
+      navSideLink_01.classList.remove("nav-side__link_black");
+      navSideLink_02.classList.remove("nav-side__link_black");
+      navSideLink_03.classList.remove("nav-side__link_black");
+      navSideLink_04.classList.remove("nav-side__link_black");
+      navSideLink_05.classList.remove("nav-side__link_black");
+      navSideLink_06.classList.remove("nav-side__link_black");
+      navSideLink_07.classList.remove("nav-side__link_black");
+      navSideLink_08.classList.remove("nav-side__link_black");
+      navSideLink_09.classList.remove("nav-side__link_black");
+
+      navSideLink_01.classList.remove("nav-side__link_white");
+      navSideLink_02.classList.remove("nav-side__link_white");
+      navSideLink_03.classList.remove("nav-side__link_white");
+      navSideLink_04.classList.remove("nav-side__link_white");
+      navSideLink_05.classList.remove("nav-side__link_white");
+      navSideLink_06.classList.remove("nav-side__link_white");
+      navSideLink_08.classList.remove("nav-side__link_white");
+      navSideLink_09.classList.remove("nav-side__link_white");
 
     } else if(window.location.hash == pageIdList[3]) {
       navSideSpan_04.classList.add("nav-side_active");
@@ -246,6 +317,26 @@ let navSideShowActive = () => {
       navSideItem_07.classList.remove("nav-side-item_active");
       navSideItem_08.classList.remove("nav-side-item_active");
       navSideItem_09.classList.remove("nav-side-item_active");
+      navSideItem_09.style.backgroundImage = "";
+
+      navSideLink_01.classList.remove("nav-side__link_black");
+      navSideLink_02.classList.remove("nav-side__link_black");
+      navSideLink_03.classList.remove("nav-side__link_black");
+      navSideLink_04.classList.remove("nav-side__link_black");
+      navSideLink_05.classList.remove("nav-side__link_black");
+      navSideLink_06.classList.remove("nav-side__link_black");
+      navSideLink_07.classList.remove("nav-side__link_black");
+      navSideLink_08.classList.remove("nav-side__link_black");
+      navSideLink_09.classList.remove("nav-side__link_black");
+
+      navSideLink_01.classList.remove("nav-side__link_white");
+      navSideLink_02.classList.remove("nav-side__link_white");
+      navSideLink_03.classList.remove("nav-side__link_white");
+      navSideLink_04.classList.remove("nav-side__link_white");
+      navSideLink_05.classList.remove("nav-side__link_white");
+      navSideLink_06.classList.remove("nav-side__link_white");
+      navSideLink_08.classList.remove("nav-side__link_white");
+      navSideLink_09.classList.remove("nav-side__link_white");
 
     } else if(window.location.hash == pageIdList[4]) {
       navSideSpan_05.classList.add("nav-side_active");
@@ -270,6 +361,26 @@ let navSideShowActive = () => {
       navSideItem_07.classList.remove("nav-side-item_active");
       navSideItem_08.classList.remove("nav-side-item_active");
       navSideItem_09.classList.remove("nav-side-item_active");
+      navSideItem_09.style.backgroundImage = "";
+
+      navSideLink_01.classList.remove("nav-side__link_black");
+      navSideLink_02.classList.remove("nav-side__link_black");
+      navSideLink_03.classList.remove("nav-side__link_black");
+      navSideLink_04.classList.remove("nav-side__link_black");
+      navSideLink_05.classList.remove("nav-side__link_black");
+      navSideLink_06.classList.remove("nav-side__link_black");
+      navSideLink_07.classList.remove("nav-side__link_black");
+      navSideLink_08.classList.remove("nav-side__link_black");
+      navSideLink_09.classList.remove("nav-side__link_black");
+
+      navSideLink_01.classList.remove("nav-side__link_white");
+      navSideLink_02.classList.remove("nav-side__link_white");
+      navSideLink_03.classList.remove("nav-side__link_white");
+      navSideLink_04.classList.remove("nav-side__link_white");
+      navSideLink_05.classList.remove("nav-side__link_white");
+      navSideLink_06.classList.remove("nav-side__link_white");
+      navSideLink_08.classList.remove("nav-side__link_white");
+      navSideLink_09.classList.remove("nav-side__link_white");
 
     } else if(window.location.hash == pageIdList[5]) {
       navSideSpan_06.classList.add("nav-side_active");
@@ -294,6 +405,26 @@ let navSideShowActive = () => {
       navSideItem_07.classList.remove("nav-side-item_active");
       navSideItem_08.classList.remove("nav-side-item_active");
       navSideItem_09.classList.remove("nav-side-item_active");
+      navSideItem_09.style.backgroundImage = "";
+
+      navSideLink_01.classList.remove("nav-side__link_black");
+      navSideLink_02.classList.remove("nav-side__link_black");
+      navSideLink_03.classList.remove("nav-side__link_black");
+      navSideLink_04.classList.remove("nav-side__link_black");
+      navSideLink_05.classList.remove("nav-side__link_black");
+      navSideLink_06.classList.remove("nav-side__link_black");
+      navSideLink_07.classList.remove("nav-side__link_black");
+      navSideLink_08.classList.remove("nav-side__link_black");
+      navSideLink_09.classList.remove("nav-side__link_black");
+
+      navSideLink_01.classList.remove("nav-side__link_white");
+      navSideLink_02.classList.remove("nav-side__link_white");
+      navSideLink_03.classList.remove("nav-side__link_white");
+      navSideLink_04.classList.remove("nav-side__link_white");
+      navSideLink_05.classList.remove("nav-side__link_white");
+      navSideLink_06.classList.remove("nav-side__link_white");
+      navSideLink_08.classList.remove("nav-side__link_white");
+      navSideLink_09.classList.remove("nav-side__link_white");
 
     } else if(window.location.hash == pageIdList[6]) {
       navSideSpan_07.classList.add("nav-side_active");
@@ -318,6 +449,27 @@ let navSideShowActive = () => {
       navSideItem_06.classList.remove("nav-side-item_active");
       navSideItem_08.classList.remove("nav-side-item_active");
       navSideItem_09.classList.remove("nav-side-item_active");
+      navSideItem_09.style.backgroundImage = "";
+
+      navSideLink_01.classList.remove("nav-side__link_black");
+      navSideLink_02.classList.remove("nav-side__link_black");
+      navSideLink_03.classList.remove("nav-side__link_black");
+      navSideLink_04.classList.remove("nav-side__link_black");
+      navSideLink_05.classList.remove("nav-side__link_black");
+      navSideLink_06.classList.remove("nav-side__link_black");
+      navSideLink_08.classList.remove("nav-side__link_black");
+      navSideLink_09.classList.remove("nav-side__link_black");
+
+      navSideLink_07.classList.add("nav-side__link_black");
+
+      navSideLink_01.classList.add("nav-side__link_white");
+      navSideLink_02.classList.add("nav-side__link_white");
+      navSideLink_03.classList.add("nav-side__link_white");
+      navSideLink_04.classList.add("nav-side__link_white");
+      navSideLink_05.classList.add("nav-side__link_white");
+      navSideLink_06.classList.add("nav-side__link_white");
+      navSideLink_08.classList.add("nav-side__link_white");
+      navSideLink_09.classList.add("nav-side__link_white");
       
     } else if(window.location.hash == pageIdList[7]) {
       navSideSpan_08.classList.add("nav-side_active");
@@ -342,6 +494,26 @@ let navSideShowActive = () => {
       navSideItem_06.classList.remove("nav-side-item_active");
       navSideItem_07.classList.remove("nav-side-item_active");
       navSideItem_09.classList.remove("nav-side-item_active");
+      navSideItem_09.style.backgroundImage = "";
+
+      navSideLink_01.classList.remove("nav-side__link_black");
+      navSideLink_02.classList.remove("nav-side__link_black");
+      navSideLink_03.classList.remove("nav-side__link_black");
+      navSideLink_04.classList.remove("nav-side__link_black");
+      navSideLink_05.classList.remove("nav-side__link_black");
+      navSideLink_06.classList.remove("nav-side__link_black");
+      navSideLink_07.classList.remove("nav-side__link_black");
+      navSideLink_08.classList.remove("nav-side__link_black");
+      navSideLink_09.classList.remove("nav-side__link_black");
+
+      navSideLink_01.classList.remove("nav-side__link_white");
+      navSideLink_02.classList.remove("nav-side__link_white");
+      navSideLink_03.classList.remove("nav-side__link_white");
+      navSideLink_04.classList.remove("nav-side__link_white");
+      navSideLink_05.classList.remove("nav-side__link_white");
+      navSideLink_06.classList.remove("nav-side__link_white");
+      navSideLink_08.classList.remove("nav-side__link_white");
+      navSideLink_09.classList.remove("nav-side__link_white");
 
     } else if(window.location.hash == pageIdList[8]) {
       navSideSpan_09.classList.add("nav-side_active");
@@ -358,6 +530,8 @@ let navSideShowActive = () => {
 
       navSideItem_09.classList.add("nav-side-item_active");
 
+      navSideItem_09.style.backgroundImage = "url('./img/fixed/nav-side_bg_white.svg')";
+
       navSideItem_01.classList.remove("nav-side-item_active");
       navSideItem_02.classList.remove("nav-side-item_active");
       navSideItem_03.classList.remove("nav-side-item_active");
@@ -366,9 +540,30 @@ let navSideShowActive = () => {
       navSideItem_06.classList.remove("nav-side-item_active");
       navSideItem_07.classList.remove("nav-side-item_active");
       navSideItem_08.classList.remove("nav-side-item_active");
+
+      navSideLink_01.classList.add("nav-side__link_black");
+      navSideLink_02.classList.add("nav-side__link_black");
+      navSideLink_03.classList.add("nav-side__link_black");
+      navSideLink_04.classList.add("nav-side__link_black");
+      navSideLink_05.classList.add("nav-side__link_black");
+      navSideLink_06.classList.add("nav-side__link_black");
+      navSideLink_07.classList.add("nav-side__link_black");
+      navSideLink_08.classList.add("nav-side__link_black");
+      navSideLink_09.classList.add("nav-side__link_black");
+
+      navSideLink_01.classList.remove("nav-side__link_white");
+      navSideLink_02.classList.remove("nav-side__link_white");
+      navSideLink_03.classList.remove("nav-side__link_white");
+      navSideLink_04.classList.remove("nav-side__link_white");
+      navSideLink_05.classList.remove("nav-side__link_white");
+      navSideLink_06.classList.remove("nav-side__link_white");
+      navSideLink_08.classList.remove("nav-side__link_white");
+      navSideLink_09.classList.remove("nav-side__link_white");
     } else {
       scrollUpLink.setAttribute('href', "#");
       scrollDownLink.setAttribute('href', "#");
+
+      navSideItem_09.style.backgroundImage = "";
     }
 }
 

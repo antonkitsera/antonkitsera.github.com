@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<body onhashchange="dynamicStyle(); scrollUpDown(); addLogo(); navSideShowActive(); addAnimation();">
+<body onhashchange="functionsActive()">
     <!-- PRELOAD ANIMATION -->
     <div class="preloader">
         <img class="preloader__img" src="./img/loader.svg" alt="" srcset="">
@@ -22,15 +22,14 @@
 
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
-            <a class="navbar-brand" href="#home">
-                <img id="header-logo" draggable="false" src="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div>
+                <a class="navbar-brand" href="#home">
+                    <img id="header-logo" draggable="false" src="">
+                </a>
+            </div>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <div class="navbar-collapse">
+            <ul class="navbar-nav ml-auto mt-lg-0">
                 <li class="nav-item d-flex">
                     <a class="nav-link align-self-center" id="nav-link" href="tel:+3800000000">+3800000000</a>
                 </li>
@@ -90,7 +89,7 @@
         </div>
     </div>
 
-    <div class="message" id="message">
+    <div class="message message_closed" id="message">
         <div class="message__block col-md-8 offset-md-2">
             <h2 class="message__title">Зв'язатись з нами</h2>
 
@@ -115,7 +114,7 @@
             </div>
         </div>
 
-        <img class="message__close" src="./img/close.svg"  draggable="false" onclick="openClose()" alt="" srcset="">
+        <img class="closeFilePanel message__close" src="./img/close.svg" draggable="false" alt="" srcset="">
     </div>
 
     <div id="fullpage">
@@ -126,8 +125,8 @@
                     <h1 class="h1 home__title">Захід Крафт Ресурс</h1>
                     <h5 class="h5 home__text col-sm-12">Повний цикл виробництва<br>гофроупаковки<br>та паперового мішка
                     </h5>
-                    <div class="open-message">
-                        <p class="open-title" onclick="openClose()">ПОВІДОМЛЕННЯ</p>
+                    <div class="openFilePanel open-message">
+                        <p class="open-title">ПОВІДОМЛЕННЯ</p>
                     </div>
                     
                 </div>
@@ -178,28 +177,37 @@
                             <div class="production__name production__name_third col-md-5 offset-md-3">
                                 <h4 class="production__name_text">Мішки / пакети</h4>
                             </div>
-                            <img class="production__image" src="./img/02/prod-3.svg" srcset="./img/02/prod-3-long.svg" sizes="(max-width: 768px)" draggable="false" alt="" srcset="">
+                            <picture>
+                                <source srcset="./img/02/prod-3-long.svg" media="(max-width: 768px)">
+                                <img class="production__image" src="./img/02/prod-3.svg" draggable="false" alt="" srcset="">
+                            </picture>
                         </div>
     
                         <div id="prod-4" class="carousel-item production__item col-md-8 offset-md-2 container tab-pane">
                             <div class="production__name production__name_fourth col-md-8 offset-md-3">
-                                <h4 class="production__name_text">Флексографічний друк</h4>
+                                <h4 class="production__name_text production__name_small">Флексографічний друк</h4>
                             </div>
-                            <img class="production__image production__image_width production__image_center" src="./img/02/prod-4.svg" draggable="false" alt="" srcset="">
+                            <img class="production__image production__image_width" src="./img/02/prod-4.svg" draggable="false" alt="" srcset="">
                         </div>
     
                         <div id="prod-5" class="carousel-item production__item col-md-11 offset-md-1 container tab-pane">
                             <div class="production__name production__name_fifth col-md-8 offset-md-3">
-                                <h4 class="production__name_text">Картонні гільзи / кутники</h4>
+                                <h4 class="production__name_text production__name_small">Картонні гільзи / кутники</h4>
                             </div>
-                            <img class="production__image" src="./img/02/prod-5.svg" srcset="./img/02/prod-5-long.svg" sizes="(max-width: 768px)" draggable="false" alt="" srcset="">
+                            <picture>
+                                <source srcset="./img/02/prod-5-long.svg" media="(max-width: 768px)">
+                                <img class="production__image" src="./img/02/prod-5.svg" draggable="false" alt="" srcset="">
+                            </picture>
                         </div>
     
                         <div id="prod-6" class="carousel-item production__item col-md-8 offset-md-2 container tab-pane">
                             <div class="production__name production__name_sixth col-md-8 offset-md-3">
-                                <h4 class="production__name_text">Стрейч плівки / скотч</h4>
+                                <h4 class="production__name_text production__name_small">Стрейч плівки / скотч</h4>
                             </div>
-                            <img class="production__image" src="./img/02/prod-6.svg" srcset="./img/02/prod-6-long.svg" sizes="(max-width: 768px)" draggable="false" alt="" srcset="">
+                            <picture>
+                                <source srcset="./img/02/prod-6-long.svg" media="(max-width: 768px)">
+                                <img class="production__image" src="./img/02/prod-6.svg" draggable="false" alt="" srcset="">
+                            </picture>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -537,7 +545,7 @@
             <div class="about row">
                 <div class="about-first col-md-4 offset-md-2">
                     <h2 class="about-h2">Наша компанія</h2>
-                    <p class="about-p">Динамічне підприємство на ринку паперової упаковки України з 2014 року. Виробничі потужності компанії знаходяться у м. Жидачів, Львівська область. Маємо великий досвід з виробництва паперової та картонної упаковки для харчових та нехарчових продуктів.</p>
+                    <p class="about-p">Динамічне підприємство на ринку паперової упаковки України з 2014 року. Виробничі потужності компанії знаходяться у м. Жидачів, Львівська область. <span class="about__mobile_hide">Маємо великий досвід з виробництва паперової та картонної упаковки для харчових та нехарчових продуктів.</span></p>
                     <div class="d-flex">
                         <img class="about-eye" src="./img/07/about-eye.svg" draggable="false" alt="">
                         <h5 class="about-h5 about-h5_yellow">ВИСНОВОК<br>державної санітарно-<br>епідеміологічної експертизи</h5>
@@ -618,7 +626,7 @@
 
                 <div class="contacts-second col-md-3">
                     <p class="contacts-p">Залиште повідомлення<br>і ми зв'яжемось з вами</p>
-                    <div class="open-message open-message_white" onclick="openClose()">
+                    <div class="open-message open-message_white openFilePanel">
                         <p class="open-title">ПОВІДОМЛЕННЯ</p>
                     </div>
                 </div>
@@ -633,14 +641,14 @@
     </main>
 
 
-<script src="./js/script.js"></script>
-<script type="text/javascript" src="./js/fullpage.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script>
     $(window).on('load', (function() {
-        $('.preloader').fadeOut(3000);
+    $('.preloader').fadeOut(3000);
     }));
 </script>
+<script src="./js/script.js"></script>
+<script src="./js/fullpage.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>

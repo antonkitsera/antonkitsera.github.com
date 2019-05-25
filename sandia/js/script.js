@@ -1,56 +1,3 @@
-function openClose() {
-    var someElem = document.getElementById('message');
-    if (someElem.style.display === "none") {
-      someElem.style.display = 'flex';
-      someElem.classList.add("animated", "fadeInLeft", "delay-500ms");
-
-      navLink.classList.remove("nav-link_white");
-      langLinkFirst.classList.remove("lang-link_whiteActive");
-      langLinkSecond.classList.remove("lang-link_white");
-      langLinkThird.classList.remove("lang-link_white");
-      
-      navLink.classList.add("nav-link_black");
-      langLinkFirst.classList.add("lang-link_blackActive");
-      langLinkSecond.classList.add("lang-link_black");
-      langLinkThird.classList.add("lang-link_black");
-
-      mailIcon.src="../img/fixed/mail-icon_black.svg";
-      scrollUp.src="../img/fixed/scroll-up_black.svg";
-      scrollDown.src="../img/fixed/scroll-down_black.svg";
-
-      langBackgroundSource.style.backgroundImage = "url('../img/fixed/lang-bg_black.svg')";
-
-      navSideList.style.display = "none";
-
-    } else if(window.location.hash == page__hashList[1]) {
-      someElem.style.display = 'none';
-      scrollDown.src="";
-      
-      navSideList.style.display = "block";
-
-    } else {
-      someElem.style.display = 'none';        
-      
-      navLink.classList.remove("nav-link_white");
-      langLinkFirst.classList.remove("lang-link_whiteActive");
-      langLinkSecond.classList.remove("lang-link_white");
-      langLinkThird.classList.remove("lang-link_white");
-
-      navLink.classList.remove("nav-link_black");
-      langLinkFirst.classList.remove("lang-link_blackActive");
-      langLinkSecond.classList.remove("lang-link_black");
-      langLinkThird.classList.remove("lang-link_black");
-      
-      mailIcon.src="../img/fixed/mail-icon.svg";
-      scrollUp.src="../img/fixed/scroll-up.svg";
-      scrollDown.src="../img/fixed/scroll-down.svg";
-
-      langBackgroundSource.style.backgroundImage = "url('../img/fixed/lang-bg.svg')";
-
-      navSideList.style.display = "block";
-    }
-}
-
 const page__hashList = ['#about','#contacts'];
 
 let navLink = document.getElementById("nav-link");
@@ -65,7 +12,7 @@ let scrollDown = document.getElementById("scroll-down");
 
 let langBackgroundSource = document.querySelector(".lang-link_active");
 
-function dynamicStyle() {
+let dynamicStyle = () => {
     if (window.location.hash == page__hashList[0]) {
         navLink.classList.add("nav-link_white");
         langLinkFirst.classList.add("lang-link_whiteActive");
@@ -126,7 +73,7 @@ let scrollDownLink = document.getElementById("scroll-down-link");
 
 const pageIdList = ['#home', '#production', '#gofrotara', '#packages', '#materials', '#materials-2', '#about', '#partners', '#contacts'];
 
-function scrollUpDown() {
+let scrollUpDown = () => {
     if (window.location.hash == pageIdList[0]) {
         scrollUpLink.setAttribute('href', "#home");
         scrollDownLink.setAttribute('href', "#production");
@@ -171,9 +118,9 @@ function scrollUpDown() {
 
 let headerLogo = document.getElementById("header-logo");
 
-function addLogo() {
+let addLogo = () => {
     if(window.location.hash != pageIdList[0]) {
-        headerLogo.src = "./img/fixed/header-logo.svg";
+        headerLogo.src = "../img/fixed/header-logo.svg";
     } else {
         headerLogo.src = "";
     }
@@ -202,7 +149,7 @@ let navSideItem_07  = document.getElementById("nav-side-item_07");
 let navSideItem_08  = document.getElementById("nav-side-item_08");
 let navSideItem_09  = document.getElementById("nav-side-item_09");
 
-function navSideShowActive() {
+let navSideShowActive = () => {
     if (window.location.hash == pageIdList[0]) {
       navSideSpan_01.classList.add("nav-side_active");
 
@@ -435,32 +382,94 @@ let aboutClass = document.querySelector(".about");
 let partnersClass = document.querySelector(".partners");
 let contactsClass = document.querySelector(".contacts");
 
-function addAnimation() {
+let addAnimation = () => {
   if (window.location.hash == pageIdList[0]) {
     homeClass.classList.add("animated", "fadeInLeft", "delay-2s");
   } else if(window.location.hash == pageIdList[1]) {
-    productionClass.classList.add("animated", "fadeInLeft", "delay-1s");
+    productionClass.classList.add("animated", "fadeInLeft", "delay-1000ms");
 
   } else if(window.location.hash == pageIdList[2]) {
-    gofrotaraClass.classList.add("animated", "fadeInLeft", "delay-1s");
+    gofrotaraClass.classList.add("animated", "fadeInLeft", "delay-1000ms");
 
   } else if(window.location.hash == pageIdList[3]) {
-    packagesClass.classList.add("animated", "fadeInLeft", "delay-1s");
+    packagesClass.classList.add("animated", "fadeInLeft", "delay-1000ms");
 
   } else if(window.location.hash == pageIdList[4]) {
-    materialsClass.classList.add("animated", "fadeInLeft", "delay-1s");
+    materialsClass.classList.add("animated", "fadeInLeft", "delay-1000ms");
 
   } else if(window.location.hash == pageIdList[5]) {
-    materials2Class.classList.add("animated", "fadeInLeft", "delay-1s");
+    materials2Class.classList.add("animated", "fadeInLeft", "delay-1000ms");
 
   } else if(window.location.hash == pageIdList[6]) {
-    aboutClass.classList.add("animated", "fadeInLeft", "delay-500ms");
+    aboutClass.classList.add("animated", "fadeInLeft", "delay-1000ms");
     
   } else if(window.location.hash == pageIdList[7]) {
-    partnersClass.classList.add("animated", "fadeInLeft", "delay-500ms");
+    partnersClass.classList.add("animated", "fadeInLeft", "delay-1000ms");
 
   } else if(window.location.hash == pageIdList[8]) {
-    contactsClass.classList.add("animated", "fadeInLeft", "delay-500ms");
+    contactsClass.classList.add("animated", "fadeInLeft", "delay-1000ms");
   } else {
   }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  dynamicStyle(); scrollUpDown(); addLogo(); navSideShowActive(); addAnimation();
+}, false);
+
+$('.openFilePanel').click(function(event) {
+  if ($('.message').hasClass('message_closed')) {
+    $('.message').removeClass('message_closed').addClass('message_opened').css('display', 'flex');
+      navLink.classList.remove("nav-link_white");
+      langLinkFirst.classList.remove("lang-link_whiteActive");
+      langLinkSecond.classList.remove("lang-link_white");
+      langLinkThird.classList.remove("lang-link_white");
+      
+      navLink.classList.add("nav-link_black");
+      langLinkFirst.classList.add("lang-link_blackActive");
+      langLinkSecond.classList.add("lang-link_black");
+      langLinkThird.classList.add("lang-link_black");
+
+      mailIcon.src="../img/fixed/mail-icon_black.svg";
+      scrollUp.src="../img/fixed/scroll-up_black.svg";
+      scrollDown.src="../img/fixed/scroll-down_black.svg";
+
+      langBackgroundSource.style.backgroundImage = "url('../img/fixed/lang-bg_black.svg')";
+
+      navSideList.style.display = "none";
+  }
+  event.preventDefault();
+});
+
+$('.closeFilePanel').click(function(event) {
+  if ($('.message').hasClass('message_opened')) {
+    $('.message').removeClass('message_opened').addClass('message_closed');
+    
+      
+    navLink.classList.remove("nav-link_white");
+      langLinkFirst.classList.remove("lang-link_whiteActive");
+      langLinkSecond.classList.remove("lang-link_white");
+      langLinkThird.classList.remove("lang-link_white");
+
+      navLink.classList.remove("nav-link_black");
+      langLinkFirst.classList.remove("lang-link_blackActive");
+      langLinkSecond.classList.remove("lang-link_black");
+      langLinkThird.classList.remove("lang-link_black");
+      
+      mailIcon.src="../img/fixed/mail-icon.svg";
+      scrollUp.src="../img/fixed/scroll-up.svg";
+      scrollDown.src="../img/fixed/scroll-down.svg";
+
+      langBackgroundSource.style.backgroundImage = "url('../img/fixed/lang-bg.svg')";
+
+      navSideList.style.display = "block";
+  }
+  event.preventDefault();
+});
+
+let functionActive = () => {
+    dynamicStyle(); 
+    scrollUpDown(); 
+    addLogo(); 
+    navSideShowActive(); 
+    addAnimation();
 }

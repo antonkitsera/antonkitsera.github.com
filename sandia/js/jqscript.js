@@ -15,11 +15,11 @@ $('.openFilePanel').click(function(event) {
         langLinkSecond.classList.add("lang-link_black");
         langLinkThird.classList.add("lang-link_black");
   
-        mailIcon.src="../img/fixed/mail-icon_black.svg";
-        scrollUp.src="../img/fixed/scroll-up_black.svg";
-        scrollDown.src="../img/fixed/scroll-down_black.svg";
+        mailIcon.src="./img/fixed/mail-icon_black.svg";
+        scrollUp.src="./img/fixed/scroll-up_black.svg";
+        scrollDown.src="./img/fixed/scroll-down_black.svg";
   
-        langBackgroundSource.style.backgroundImage = "url('../img/fixed/lang-bg_black.svg')";
+        langBackgroundSource.style.backgroundImage = "url('./img/fixed/lang-bg_black.svg')";
   
         navSideList.style.display = "none";
     }
@@ -41,11 +41,11 @@ $('.openFilePanel').click(function(event) {
         langLinkSecond.classList.remove("lang-link_black");
         langLinkThird.classList.remove("lang-link_black");
         
-        mailIcon.src="../img/fixed/mail-icon.svg";
-        scrollUp.src="../img/fixed/scroll-up.svg";
-        scrollDown.src="../img/fixed/scroll-down.svg";
+        mailIcon.src="./img/fixed/mail-icon.svg";
+        scrollUp.src="./img/fixed/scroll-up.svg";
+        scrollDown.src="./img/fixed/scroll-down.svg";
   
-        langBackgroundSource.style.backgroundImage = "url('../img/fixed/lang-bg.svg')";
+        langBackgroundSource.style.backgroundImage = "url('./img/fixed/lang-bg.svg')";
   
         navSideList.style.display = "block";
     }

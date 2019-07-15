@@ -107,16 +107,21 @@ body {
           transform: translateY(7px);
 }
 
+.btn-arrow {
+  text-align: center;
+  color: #ffffff;
+}
+
 #button {
-  background: url("../img/icon-triangle-top.png") right 14px 0 no-repeat #145ca6 !important;
+  background-color: #145ca6 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 132px;
   height: 50px;
+  width: 50px;
   text-align: center;
   position: fixed;
   bottom: 100px;
@@ -126,15 +131,12 @@ body {
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
-  -webkit-box-shadow: 1px 0 0 #131313;
-          box-shadow: 1px 0 0 #131313;
-}
-
-#button::after {
-  content: "TO TOP";
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #button:hover {
@@ -149,7 +151,6 @@ body {
 #button.show {
   opacity: 1;
   visibility: visible;
-  background: url("../img/icon-triangle-top.png") right 14px 0 no-repeat #145ca6 !important;
 }
 
 .dropdown-item {
@@ -743,7 +744,7 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .header {
     height: 65px;
   }
@@ -983,24 +984,18 @@ body {
     display: flex;
   }
   #button {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
-    background-position: center;
-    width: 62px;
-    bottom: 10px;
-    right: 5px;
-  }
-  #button::after {
-    content: none;
+    bottom: 15px;
+    right: 10px;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
   .footer__social {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nav-link::after {
+    content: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

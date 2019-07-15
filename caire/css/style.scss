@@ -96,12 +96,17 @@ body {
     }
 }
 
+.btn-arrow {
+    text-align: center;
+    color: #ffffff;
+}
+
 #button {
-    background: url("../img/icon-triangle-top.png") right 14px 0 no-repeat #145ca6 !important;
+    background-color: #145ca6 !important;
     display: flex;
     align-items: center;
-    width: 132px;
     height: 50px;
+    width: 50px;
     text-align: center;
     position: fixed;
     bottom: 100px;
@@ -111,26 +116,23 @@ body {
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
-    box-shadow: 1px 0 0 #131313;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
 
-  #button::after {
-    content: "TO TOP";
-    font-family: $fontTitle;
-    font-size: 1rem;
-    color: #fff;
-  }
   #button:hover {
     cursor: pointer;
     background-color: #2588ea;
   }
+
   #button:active {
     background-color: #145ca6;
   }
+
   #button.show {
     opacity: 1;
     visibility: visible;
-    background: url("../img/icon-triangle-top.png") right 14px 0 no-repeat #145ca6 !important;
   }
 
 .dropdown-item {
@@ -743,7 +745,7 @@ body {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
     .header {
         height: 65px;
     }
@@ -990,20 +992,17 @@ body {
     }
 
     #button {
-        transform: rotate(270deg);
-        background-position: center;
-        width: 62px;
-        bottom: 10px;
-        right: 5px;
-
-        &::after {
-            content: none;
-        }
+        bottom: 15px;
+        right: 10px;
     }
 }
 
-@media (min-width: "1024px") and (max-width: "1200px") {
+@media (min-width: 1000px) and (max-width: 1200px) {
     .footer__social {
-        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .nav-link::after {
+        content: none !important;
     }
 }

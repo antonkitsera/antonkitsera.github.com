@@ -752,8 +752,8 @@ body {
   .dropdown-item {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    text-align: center;
-    padding-left: 0;
+    text-align: center !important;
+    padding-left: 0 !important;
   }
   .navbar-collapse {
     background-color: #ffffff;

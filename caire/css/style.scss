@@ -416,10 +416,7 @@ body {
         margin-top: 0;
         max-width: 604px;
         width: 100%;
-    }
-
-    &_padding {
-        padding-left: 53px;
+        transform: translateX(115px);
     }
 
     &__title {
@@ -837,6 +834,10 @@ body {
             flex-direction: column;
         }
 
+        &__desc {
+            transform: none !important;
+        }
+
         &__content {
             justify-content: center;
             align-content: flex-end;
@@ -850,6 +851,11 @@ body {
             max-width: auto !important;
             margin-left: 20px !important;
             margin-right: 20px;
+        }
+
+        &__photo, &__content {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
         }
 
         &_padding {
@@ -903,6 +909,11 @@ body {
             margin-right: auto !important;
             transform: none;
             margin-top: 20px;
+        }
+
+        &__photo, &__content {
+            padding-left: 19px !important;
+            padding-right: 19px !important;
         }
 
         &_padding {

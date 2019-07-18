@@ -25,6 +25,10 @@ body {
 
 .navbar {
     width: 100%;
+
+    &-collapse {
+        justify-content: center;
+    }
 }
 
 .nav {
@@ -76,7 +80,7 @@ body {
 
     &__tabs a.active::after, &__tabs a:focus::after, &__tabs a:hover::after {
         background-color: #145ca6;
-        left: 35px;
+        left: 28px;
         width: 24px;
     }
 
@@ -86,7 +90,7 @@ body {
         width: 12px;
         height: 2px;
         background-color: #9b9b9b;
-        left: 47px;
+        left: 38px;
         transform: translateY(7px);
     }
 }
@@ -113,7 +117,7 @@ body {
     z-index: 1000;
     justify-content: center;
     border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 
   #button:hover {
@@ -131,9 +135,6 @@ body {
   }
 
 .dropdown-item {
-    text-transform: uppercase;
-    color: #595959 !important;
-
     &:hover {
         background-color: #f8f8f8 !important;
         color: #145ca6 !important;
@@ -147,9 +148,13 @@ body {
 
 
 .dropdown {
-    &-item {
+    &-item {  
+        text-transform: uppercase;
+        color: #595959 !important;
         font-family: $fontTitle;
         font-size: 14px;
+        text-align: left !important;
+        padding-left: 10px !important;
     }
 }
 
@@ -701,19 +706,24 @@ body {
 
     .copd {
         &__desc {
-            padding: 60px;
-            max-width: calc(100% - 80px);
+            padding: 40px;
+            max-width: none !important;
         }
 
         &__photo {
-            max-width: calc(100% - 80px);
+            max-width: auto !important;
         }
     }
 
     .feature {
+        &__desc {
+            padding: 40px;
+            max-width: none !important;
+        }
+
         &__photo {
             margin-top: 40px;
-            max-width: calc(100% - 80px);
+            max-width: auto !important;
         }
     }
 
@@ -761,6 +771,8 @@ body {
         &-item {
             font-family: $fontTitle;
             font-size: 14px;
+            text-align: center !important;
+            padding-left: 0 !important;
         }
     }
 
@@ -926,6 +938,7 @@ body {
     }
 
     .footer {
+        margin-top: 30px;
         min-height: 182px;
         padding-bottom: 77px;
 
@@ -1004,8 +1017,13 @@ body {
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
+    .footer__block {
+        flex-wrap: wrap;
+    }
+
     .footer__social {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .nav-link::after {

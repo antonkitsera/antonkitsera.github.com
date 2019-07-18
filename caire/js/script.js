@@ -40,9 +40,3 @@ buttonNext.onclick = () => {
         
     }
 }
-
-if(divFirst.classList.contains("active") == true) {
-    console.log("yes");
-} else {
-    console.log("no");
-}

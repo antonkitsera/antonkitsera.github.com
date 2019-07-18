@@ -73,6 +73,11 @@ body {
   padding: 0 20px 25px;
 }
 
+.contact-form__block_padding {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
 .contact-form__block--padding {
   padding-left: 0;
   padding-right: 0;
@@ -265,6 +270,9 @@ body {
   }
   .contact-form_marginBottom {
     margin: 0;
+  }
+  .contact-form__block_padding {
+    padding: 0 !important;
   }
   .contact-form__button_text {
     position: relative;

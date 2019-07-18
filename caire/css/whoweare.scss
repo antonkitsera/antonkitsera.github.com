@@ -156,6 +156,7 @@ body {
 
 .button {
     &_transform {
+        right: auto;
         top: auto;
         transform: translateY(-52px) translateX(20px);
     }
@@ -186,6 +187,12 @@ body {
 
         &-logo__source {
             width: 140px;
+        }
+    }
+
+    .feature {
+        &__title {
+            align-self: flex-start;
         }
     }
 }

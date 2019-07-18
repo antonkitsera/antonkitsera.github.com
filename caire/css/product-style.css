@@ -51,8 +51,8 @@ body {
 }
 
 .preview-carl__image {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.65);
+          transform: scale(0.65);
   margin: 0 auto;
   width: 65% !important;
 }
@@ -486,6 +486,11 @@ body {
   }
 }
 
+.product_relative {
+  position: relative;
+  left: 50px;
+}
+
 @media (max-width: 992px) {
   .main {
     padding-top: 68px;
@@ -523,6 +528,10 @@ body {
   .hitw__image {
     padding: 25px;
     margin-left: 15%;
+  }
+  .product_relative {
+    position: relative;
+    left: auto;
   }
 }
 /*# sourceMappingURL=product-style.css.map */

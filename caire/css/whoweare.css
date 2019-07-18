@@ -160,6 +160,7 @@ body {
 }
 
 .button_transform {
+  right: auto;
   top: auto;
   -webkit-transform: translateY(-52px) translateX(20px);
           transform: translateY(-52px) translateX(20px);
@@ -184,6 +185,10 @@ body {
   }
   .who-logo__source {
     width: 140px;
+  }
+  .feature__title {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 /*# sourceMappingURL=whoweare.css.map */

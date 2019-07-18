@@ -34,6 +34,12 @@ body {
           justify-content: center;
 }
 
+.navbar_width {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;

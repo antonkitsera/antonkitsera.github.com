@@ -29,6 +29,10 @@ body {
     &-collapse {
         justify-content: center;
     }
+
+    &_width {
+        justify-content: flex-end;
+    }
 }
 
 .nav {

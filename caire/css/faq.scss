@@ -78,7 +78,7 @@ body {
         height: 0;
         position: absolute;
         top: 42px;
-        transform: translateY(-50%);
+        transform: translateY(-50%) rotate(180deg);
         pointer-events: none;
         right: 30px;
         border-left: 10px solid transparent;
@@ -88,7 +88,7 @@ body {
     }
 
     &-icon.collapsed::after {
-        transform: rotate(180deg);
+        transform: rotate(0deg);
         transition: 300ms;
         top: 35px;
     }
@@ -161,5 +161,11 @@ body {
 @media (max-width: 992px) {
     .main {
         padding-top: 68px;
+    }
+
+    .card {
+        &-icon {
+            padding-right: 20px;
+        }
     }
 }

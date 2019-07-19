@@ -75,8 +75,8 @@ body {
   height: 0;
   position: absolute;
   top: 42px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
   pointer-events: none;
   right: 30px;
   border-left: 10px solid transparent;
@@ -87,8 +87,8 @@ body {
 }
 
 .card-icon.collapsed::after {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   -webkit-transition: 300ms;
   transition: 300ms;
   top: 35px;
@@ -153,6 +153,9 @@ body {
 @media (max-width: 992px) {
   .main {
     padding-top: 68px;
+  }
+  .card-icon {
+    padding-right: 20px;
   }
 }
 /*# sourceMappingURL=faq.css.map */

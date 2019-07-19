@@ -43,6 +43,14 @@ body {
     .o-block {
         margin-bottom: 30px
     }
+
+    .button {
+        &-view_margin {
+            margin-left: 20px;
+            margin-right: 20px;
+            align-self: center;
+        }
+    }
 }
 
 @media (min-width: 1550px) {
@@ -56,6 +64,13 @@ body {
     -ms-flex-pack: center;
     justify-content: center
 }
+
+.product-grid_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 .product-grid__sub-heading {
     font-size: .75rem;
@@ -84,7 +99,9 @@ body {
     font-size: 1.28rem;
     font-weight: 500;
     line-height: 2.25rem;
-    margin-bottom: 0
+    margin-bottom: 0;
+    text-align: center;
+    height: 72px;
 }
 
 .c-all-products__category a,
@@ -110,7 +127,7 @@ body {
 
 @media (min-width: 576px) {
     .product-grid__header {
-        min-height: 330px
+        min-height: 300px
     }
     .product-grid__header img {
         height: 174px
@@ -119,7 +136,7 @@ body {
 
 @media (min-width: 992px) {
     .product-grid__header {
-        min-height: 350px
+        min-height: 300px
     }
 }
 
@@ -136,7 +153,14 @@ body {
 
 @media (min-width: 576px) and (max-width:991px) {
     .product-grid__item:nth-of-type(odd) .product-grid__attribute-list {
-        position: relative
+        position: relative;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .product-grid__item:nth-of-type(odd) .product-grid__attribute-list {
+        padding-top: 0px;
     }
 }
 
@@ -150,8 +174,7 @@ body {
     .product-grid__item {
         padding: 45px 0;
     }
-    .product-grid__item .o-button {
-        display: block;
+    .product-grid__item {
         font-size: .8rem;
         margin: 50px auto 0;
         max-width: 220px;
@@ -221,15 +244,15 @@ body {
 }
 
 .product-grid__attribute-title-icons.pulse::before {
-    background-image: url("../img/products/icon-grid-portable.png");
+    background-image: url("../img/icons/icon-grid-pulse.png");
 }
 
 .product-grid__attribute-title-icons.flow::before {
-    background-image: url("../img/products/icon-grid-portable.png")
+    background-image: url("../img/icons/icon-grid-flow.png")
 }
 
 .product-grid__attribute-title-icons.weight::before {
-    background-image: url("../img/products/icon-grid-portable.png")
+    background-image: url("../img/icons/icon-grid-weight.png")
 }
 
 .product-grid__attribute-title-icons.portable::before {
@@ -237,23 +260,27 @@ body {
 }
 
 .product-grid__attribute-title-icons.at-home::before {
-    background-image: url("../img/products/icon-grid-portable.png")
+    background-image: url("../img/icons/icon-grid-home.png")
 }
 
 .product-grid__attribute-title-icons.ac-power::before {
-    background-image: url("../img/products/icon-grid-portable.png")
+    background-image: url("../img/icons/icon-grid-ac-power.png")
 }
 
 .product-grid__attribute-title-icons.dc-power::before {
-    background-image: url("../img/products/icon-grid-portable.png")
+    background-image: url("../img/icons/icon-grid-ac-power.png")
 }
 
 .product-grid__attribute-title-icons.battery-power::before {
-    background-image: url("../img/products/icon-grid-portable.png")
+    background-image: url("../img/icons/icon-battery.png")
 }
 
 .product-grid__attribute-title-icons.unit-price::before {
-    background-image: url("../img/products/icon-grid-portable.png")
+    background-image: url("../img/icons/icon-grid-unit-price.png")
+}
+
+.product-grid__attribute-title-icons.acc::before {
+    background-image: url("../img/icons/icon-accessability.png")
 }
 
 .product-grid__attribute-status {
@@ -587,5 +614,33 @@ body {
         }
     }
 
+    .freestyle-image {
+        &_mobile {
+            max-width: 164px !important;
+        }
+    }
 
+    .eclipce-image {
+        &_mobile {
+            width: 59% !important;
+        }
+    }
+
+    .button {
+        &-view_first {
+            transform: translateY(-13px);
+        }
+
+        &-view_second {
+            margin-top: 3px;
+        }
+
+        &-view_third {
+            margin-top: 12px;
+        }
+
+        &-view_fourth {
+            margin-top: 12px;
+        }
+    }
 }

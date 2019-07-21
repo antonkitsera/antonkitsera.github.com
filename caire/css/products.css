@@ -418,7 +418,7 @@ body {
 }
 
 .headline__text {
-  padding: 60px 133px;
+  padding: 60px 133px 20px 133px;
   font-family: "Roboto Slab", serif;
   color: #595959;
   line-height: 1.83;

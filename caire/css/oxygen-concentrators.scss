@@ -346,10 +346,6 @@ body {
         &_padding {
             padding: 0;
         }
-
-        &__item_margin {
-            margin-top: 20px;
-        }
     }
 
     .caire {
@@ -404,6 +400,12 @@ body {
 
         &__arrowLeft {
             transform: scale(0.6) rotate(180deg);
+        }
+    }
+
+    .pulseflow {
+        &__item_margin {
+            margin-top: 20px;
         }
     }
 }

@@ -74,7 +74,7 @@
                 </div>
                 <div class="carousel-item" style="background-image: url('./img/slider-2.jpg')">
                 <div class="carousel-caption noselect">
-                    <h1 class="carousel__title">Куди би ви не пішли.<br> З чим би ви не зіткнулися.</h1>
+                    <h2 class="carousel__title">Куди би ви не пішли.<br><span class="carousel__title_mobile"> З чим би ви не зіткнулися.</span></h2>
                     <p class="carousel__text">З нашим повним спектром концентраторів кисню, ви можете повернутися до будь-якого або того, хто розраховує на вас. Нашим технологіям довіряють ті, хто вимагає найкращого, щоб ви могли довіряти продуктам CAIRE<sup>®</sup>, щоб вони були там для вас.</p>
                     <a class="button button_secondary" href="./products.html">ОГЛЯНУТИ ПРОДУКЦІЮ</a>
                 </div>
@@ -110,7 +110,7 @@
                     
                         <div class="col-12 col-md-4 offset-md-1  col-lg-12 offset-lg-0">
                             <div class="button__group">
-                                <a class="button button_arrow" href="./documents/infokit.pdf" target="_blank"></a>
+                                <a class="button button_arrow" href="./documents/infoguide.pdf" download target="_blank"></a>
                                 <p class="button__text">Завантажити <br>Інформаційний Комплект</p>
                             </div>
                         </div>
@@ -192,6 +192,43 @@
         </section>
     </main>
 
+      <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Політика конфіденційності </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Політика конфіденційності персональних даних,  зібраних допомогою веб форм у  процесі переговорів чи переписці у Facebook/Instagram та інших соціальних мережах, наданих електронною поштою та особисто переданих в анкетах та копіях
+
+Заявник  надає добровільну згоду на обробку власних персональних даних, в обсязі, передбаченому Опитуваннями чи формами зворотнього зв’язку, які проводить ТОВ «ВІНМЕД». Відповіді на запитання посвідчують безумовну згоду на обробку власних персональних даних та підтверджують, що Заявник ознайомлений належним чином зі своїми правами, передбаченими Законом України «Про захист персональних даних», а також із метою обробки персональних даних та ним буде виконано таке ознайомлення щодо осіб, визначених відповідно до цього опитування чи запропонованих форм зворотнього зв’язку.
+   
+ТОВ «ВІНМЕД» гарантує, що будь-які персональні дані, що передаються відповідно до умов цього Опитування, отримані, обробляються та передаються ним у відповідності до вимог чинного законодавства України в сфері захисту персональних даних. ТОВ «ВІНМЕД» гарантує, що передача та обробка отриманих персональних даних здійснюється виключно в обсязі та в межах, передбачених Законом України «Про захист персональних даних».
+
+Згода на обробку персональних даних означає надання Заявником  згоди на будь-яку дію або сукупність дій, таких як збирання, реєстрація, накопичення, зберігання, адаптування, зміна, поновлення, використання і поширення (розповсюдження, реалізація, передача), знеособлення, знищення персональних даних, у тому числі з використанням інформаційних (автоматизованих) систем.
+
+До персональний даних, згоду на обробку яких  проекту надає, зокрема, належать:
+
+<ul>
+    <li>ідентифікаційні дані про особу, в тому числі прізвище, ім’я, по батькові, паспортні дані, а також дані облікової картки платника податків;</li>
+    <li>дані, що стосуються стану здоров’я Заявника;</li>
+    <li>електронні ідентифікаційні дані Заявника (номери телефонів, адреси електронної пошти тощо);</li>
+</ul>
+
+У разі порушення однією із Сторін вимог законодавства України про захист персональних
+даних, інша Сторона не несе відповідальності за таке порушення.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <footer class="footer">
         <div class="footer__block container">
             <a class="footer__logo" href="#">
@@ -202,17 +239,15 @@
                 <p class="footer__copyright">Copyright 2019 CAIRE Inc.<span class="footer__copyright_hide"> Всі права захищені</span></p>
                 
                 <span class="footer__text_flex">
-                    <a class="footer__docs footer__docs_padding" href="#" target="_blank">Політика конфіденційності </a>
+                    <a class="footer__docs footer__docs_padding" href="" target="_blank" data-toggle="modal" data-target="#exampleModalLong">Політика конфіденційності </a>
                     <a class="footer__docs" href="#" target="_blank">Умови використання</a>
                 </span>
             </div>
 
             <div class="footer__social">
-                <a class="footer__link" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="footer__link" href=""><i class="fab fa-twitter"></i></a>
-                <a class="footer__link" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="footer__link" href=""><i class="fab fa-youtube"></i></a>
-                <a class="footer__link" href=""><i class="fab fa-wordpress"></i></a>
+                <a class="footer__link" href="https://www.facebook.com/winmedllc/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="footer__link" target="_blank" href="https://www.instagram.com/winmedllc/"><i class="fab fa-instagram"></i></a>
+                <a class="footer__link" target="_blank" href="https://m.me/winmedllc/"><i class="fab fa-facebook-messenger"></i></a>
             </div>
         </div>
 

@@ -485,6 +485,16 @@ body {
             margin: 0 auto;
             padding-top: 20px;
         }
+
+        &-carl__image {
+            width: 100% !important;
+        }
+    }
+
+    .benef {
+        &__title {
+            font-size: 1.25rem;
+        }
     }
 
     .request {
@@ -513,7 +523,7 @@ body {
         }
 
         &-info__title {
-            font-size: 1.65rem;
+            font-size: 1.45rem;
         }
     }
 
@@ -527,6 +537,11 @@ body {
         &__image {
             padding: 25px;
             margin-left: 15%;
+        }
+
+        &__image--margin {
+            margin-left: auto;
+            width: auto;
         }
     }
 

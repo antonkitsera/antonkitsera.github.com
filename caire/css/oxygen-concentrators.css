@@ -326,9 +326,6 @@ body {
   .pulseflow_padding {
     padding: 0;
   }
-  .pulseflow__item_margin {
-    margin-top: 20px;
-  }
   .caire {
     margin-top: 30px;
   }
@@ -377,6 +374,9 @@ body {
   .caire__arrowLeft {
     -webkit-transform: scale(0.6) rotate(180deg);
             transform: scale(0.6) rotate(180deg);
+  }
+  .pulseflow__item_margin {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=oxygen-concentrators.css.map */

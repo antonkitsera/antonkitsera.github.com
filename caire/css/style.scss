@@ -589,6 +589,35 @@ body {
     padding-right: 15px;
 }
 
+.button {
+    &__download {
+        background-color: #145ca6 !important;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 30px;
+    }
+
+    &__icon {
+        text-align: center;
+        color: #ffffff;
+    }
+
+    &__group_center {
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 70% !important; 
+    }
+}
+
 
 @media (min-width: 1000px) {
     .button {
@@ -817,6 +846,10 @@ body {
         &-control-prev, &-control-next {
             display: none !important;
         }
+
+        &__title_mobile {
+            display: none;
+        }
     }
 
     .button {
@@ -1034,3 +1067,4 @@ body {
         content: none !important;
     }
 }
+

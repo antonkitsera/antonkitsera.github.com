@@ -119,7 +119,7 @@
                                 <dl class="product-grid__attribute"><dt class="product-grid__attribute-title product-grid__attribute-title-icons unit-price">Гарантія</dt>
                                     <dd class="product-grid__attribute-status active">3 роки</dd>
                                 </dl>
-                            </div><a class="button button-view_margin button-view_first" href="#">Детальніше</a>
+                            </div><a class="button button-view_margin button-view_first" href="./product/freestyle.html">Детальніше</a>
                     </div>
                     
                     <div class="product-grid_flex product-grid__item col-sm-6 col-lg-3 col-xl col-xxl-2">
@@ -191,7 +191,7 @@
                             <dl class="product-grid__attribute"><dt class="product-grid__attribute-title product-grid__attribute-title-icons unit-price">Гарантія</dt>
                                 <dd class="product-grid__attribute-status active">3 роки</dd>
                             </dl>
-                        </div><a class="button button-view_margin button-view_third" href="#">Детальніше</a>
+                        </div><a class="button button-view_margin button-view_third" href="./product/visionaire.html">Детальніше</a>
                     </div>
                     
                     <div class="product-grid_flex product-grid__item col-sm-6 col-lg-3 col-xl col-xxl-2">
@@ -227,7 +227,7 @@
                             <dl class="product-grid__attribute"><dt class="product-grid__attribute-title product-grid__attribute-title-icons unit-price">Гарантія</dt>
                                 <dd class="product-grid__attribute-status active">3 роки</dd>
                             </dl>
-                        </div><a class="button button-view_margin button-view_fourth" href="#">Детальніше</a>
+                        </div><a class="button button-view_margin button-view_fourth" href="./product/newlife.html">Детальніше</a>
                     </div>
                 </div>
 
@@ -237,6 +237,13 @@
         <section class="headline container">
             <div class="headline__block col-12">
                 <p class="headline__text">Ми пишаємося тим, що будуємо деякі з найбільш технологічних і високоякісних кисневих пристроїв на планеті. Наша повна лінійка кисневих продуктів допомагає лікувати практично будь-який етап респіраторних захворювань. Викиньте важкі балони з киснем сьогодні і відчуйте комфорт і душевний спокій продукту кисню CAIRE. Скористайтеся наведеною нижче таблицею, щоб порівняти і вибрати концентратор кисню, який найкраще відповідає вашим потребам на дорозі або вдома.</p>
+
+                
+                <div class="button__group button__group_center">
+                    <a class="button__download" href="./documents/PhysicianStatement.pdf" download><i class="button__icon fas fa-arrow-down"></i></a>
+                    <p class="button__text">
+                            Лікарський<br>висновок</p>
+                </div>
             </div>
         </section>
 
@@ -247,13 +254,11 @@
             <div class="accessories__desc col-10 col-md-5 offset-md-1 col-xl-4">
                 <h2 class="accessories__title">Аксесуари, кабелі та зарядні пристрої</h2>
 
-                <a class="accessories__button button" href="#">АКСЕССУАРИ МАГАЗИНІВ</a>
-
                 <div class="button__group">
-                    <a class="button__download" href="#"><i class="button__icon fas fa-arrow-down"></i></a>
+                    <a class="button__download" href="./documents/catalog.pdf" download><i class="button__icon fas fa-arrow-down"></i></a>
                     <p class="button__text">
                             ЗАВАНТАЖИТИ 
-                            ІНФОРМАЦІЮ<br>ПРО ПРОДУКТ</p>
+                            КАТАЛОГ<br>АКСЕСУАРІВ</p>
                 </div>
             </div>
             
@@ -269,7 +274,7 @@
                 </div>
 
 
-                <form class="" name="contactForm" autocomplete="off">
+                <form class="" name="contactForm" action="./send.php" method="POST" autocomplete="off">
 
                     <div class="request_marginBottom row">
                         <div class="request__item col-lg-6">    
@@ -286,12 +291,12 @@
                     <div class="request_marginBottom row">
                         <div class="request__item col-lg-6">
                             <label class="request__label" for="email">Адреса електронної пошти*</label>
-                            <input class="request__input" id="email" name="email" type="email">
+                            <input class="request__input" id="email" name="email" required type="email">
                         </div>
 
                         <div class="request__item col-lg-6">
                             <label class="request__label" for="phoneNumber">Номер телефону*</label>
-                            <input class="request__input" id="phoneNumber" name="phoneNumber" type="phone">
+                            <input class="request__input" id="phoneNumber" name="phoneNumber" required type="number">
                         </div>
                     </div>
             
@@ -312,32 +317,66 @@
 
         </section>
     </main>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Політика конфіденційності </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                Політика конфіденційності персональних даних,  зібраних допомогою веб форм у  процесі переговорів чи переписці у Facebook/Instagram та інших соціальних мережах, наданих електронною поштою та особисто переданих в анкетах та копіях
 
-    <footer class="footer">
-        <div class="footer__block container">
-            <a class="footer__logo" href="#">
-                <img class="footer__img" alt="Caire logo" src="./img/logo-f.png">
-            </a>
-
-            <div class="footer__text">
-                <p class="footer__copyright">Copyright 2019 CAIRE Inc.<span class="footer__copyright_hide"> Всі права захищені.</span></p>
+                Заявник  надає добровільну згоду на обробку власних персональних даних, в обсязі, передбаченому Опитуваннями чи формами зворотнього зв’язку, які проводить ТОВ «ВІНМЕД». Відповіді на запитання посвідчують безумовну згоду на обробку власних персональних даних та підтверджують, що Заявник ознайомлений належним чином зі своїми правами, передбаченими Законом України «Про захист персональних даних», а також із метою обробки персональних даних та ним буде виконано таке ознайомлення щодо осіб, визначених відповідно до цього опитування чи запропонованих форм зворотнього зв’язку.
+                   
+                ТОВ «ВІНМЕД» гарантує, що будь-які персональні дані, що передаються відповідно до умов цього Опитування, отримані, обробляються та передаються ним у відповідності до вимог чинного законодавства України в сфері захисту персональних даних. ТОВ «ВІНМЕД» гарантує, що передача та обробка отриманих персональних даних здійснюється виключно в обсязі та в межах, передбачених Законом України «Про захист персональних даних».
                 
-                <span class="footer__text_flex">
-                    <a class="footer__docs footer__docs_padding" href="#" target="_blank">Privacy Policy</a>
-                    <a class="footer__docs" href="#" target="_blank">Terms of Use</a>
-                </span>
-            </div>
+                Згода на обробку персональних даних означає надання Заявником  згоди на будь-яку дію або сукупність дій, таких як збирання, реєстрація, накопичення, зберігання, адаптування, зміна, поновлення, використання і поширення (розповсюдження, реалізація, передача), знеособлення, знищення персональних даних, у тому числі з використанням інформаційних (автоматизованих) систем.
+                
+                До персональний даних, згоду на обробку яких  проекту надає, зокрема, належать:
 
-            <div class="footer__social">
-                <a class="footer__link" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="footer__link" href=""><i class="fab fa-twitter"></i></a>
-                <a class="footer__link" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="footer__link" href=""><i class="fab fa-youtube"></i></a>
-                <a class="footer__link" href=""><i class="fab fa-wordpress"></i></a>
+                <ul>
+                    <li>ідентифікаційні дані про особу, в тому числі прізвище, ім’я, по батькові, паспортні дані, а також дані облікової картки платника податків;</li>
+                    <li>дані, що стосуються стану здоров’я Заявника;</li>
+                    <li>електронні ідентифікаційні дані Заявника (номери телефонів, адреси електронної пошти тощо);</li>
+                </ul>
+                
+                У разі порушення однією із Сторін вимог законодавства України про захист персональних
+                даних, інша Сторона не несе відповідальності за таке порушення.
             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
-
-    </footer>
+      </div>
+    
+        <footer class="footer">
+            <div class="footer__block container">
+                <a class="footer__logo" href="#">
+                    <img class="footer__img" alt="Caire logo" src="./img/logo-f.png">
+                </a>
+    
+                <div class="footer__text">
+                    <p class="footer__copyright">Copyright 2019 CAIRE Inc.<span class="footer__copyright_hide"> Всі права захищені</span></p>
+                    
+                    <span class="footer__text_flex">
+                        <a class="footer__docs footer__docs_padding" href="" target="_blank" data-toggle="modal" data-target="#exampleModalLong">Політика конфіденційності </a>
+                        <a class="footer__docs" href="#" target="_blank">Умови використання</a>
+                    </span>
+                </div>
+    
+                <div class="footer__social">
+                    <a class="footer__link" href="https://www.facebook.com/winmedllc/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="footer__link" target="_blank" href="https://www.instagram.com/winmedllc/"><i class="fab fa-instagram"></i></a>
+                    <a class="footer__link" target="_blank" href="https://m.me/winmedllc/"><i class="fab fa-facebook-messenger"></i></a>
+                </div>
+            </div>
+    
+        </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

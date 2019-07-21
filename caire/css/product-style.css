@@ -499,6 +499,12 @@ body {
     margin: 0 auto;
     padding-top: 20px;
   }
+  .preview-carl__image {
+    width: 100% !important;
+  }
+  .benef__title {
+    font-size: 1.25rem;
+  }
   .request_marginBottom {
     margin: 0;
   }
@@ -519,7 +525,7 @@ body {
     margin-right: auto;
   }
   .spec-info__title {
-    font-size: 1.65rem;
+    font-size: 1.45rem;
   }
   .hitw__title {
     text-align: center;
@@ -528,6 +534,10 @@ body {
   .hitw__image {
     padding: 25px;
     margin-left: 15%;
+  }
+  .hitw__image--margin {
+    margin-left: auto;
+    width: auto;
   }
   .product_relative {
     position: relative;

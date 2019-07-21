@@ -228,6 +228,19 @@ body {
   border-radius: 15px;
 }
 
+.touModal.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.touModal__dialog {
+  max-width: 480px !important;
+}
+
 .button {
   background: url("../img/icon-triangle-right.png") right 14px center no-repeat #145ca6;
   border: 0;
@@ -653,6 +666,9 @@ body {
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 70% !important;
+  }
+  .touModal__dialog {
+    max-width: 480px !important;
   }
 }
 

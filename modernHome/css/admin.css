@@ -1,0 +1,54 @@
+.main {
+  margin-bottom: 50px;
+}
+
+.g-title::after {
+  content: none;
+}
+
+.g-title {
+  margin-bottom: 30px;
+}
+
+.building_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.building_trs {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+.building__add {
+  border: 5px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.custom-button-learn {
+  margin: 0 auto;
+}
+
+.custom-button_padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/*# sourceMappingURL=admin.css.map */
